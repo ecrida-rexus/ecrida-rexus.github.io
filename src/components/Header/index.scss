@@ -1,0 +1,48 @@
+.Header {
+  height: 80px;
+  width: 100%;
+
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 0 80px;
+  box-sizing: border-box;
+
+  background-color: black;
+  box-shadow: 0px 1px 5px #27272780;
+
+  .Logo {
+    height: 80%;
+    align-self: center;
+  }
+
+  .Group {
+    width: max-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  p {
+    height: fit-content;
+    margin: 0 10px;
+    color: white;
+  }
+
+  a {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    .SocialMediaIcon {
+      height: 50%;
+      margin: 0 -5px;
+    }
+  }
+}
