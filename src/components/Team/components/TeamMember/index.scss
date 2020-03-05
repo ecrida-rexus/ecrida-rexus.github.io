@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.TeamMember {
+  width: 15vw;
+  height: 15vw;
+  margin: 20px 0;
+
+  .Image {
+    height: 75%;
+    width: auto;
+    object-fit: cover;
+  }
+
+  h1 {
+    font-size: 22px;
+    font-weight: 600;
+
+    margin: 5px 0;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 300;
+
+    margin: 5px 0;
+  }
+}
