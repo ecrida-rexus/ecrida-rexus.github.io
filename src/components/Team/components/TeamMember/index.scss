@@ -12,7 +12,11 @@
   .Image {
     height: 75%;
     width: auto;
+
     object-fit: cover;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
   }
 
   h1 {

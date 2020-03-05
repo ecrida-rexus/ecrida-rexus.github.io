@@ -6,6 +6,7 @@ import Section from './components/Section'
 
 import './App.scss'
 import Team from './components/Team'
+import Partners from './components/Partners'
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <Introduction />
       <Section headline='Meet our team'>
         <Team />
+      </Section>
+      <Section headline='Sponsors and Partners'>
+        <Partners />
       </Section>
     </div >
   )

@@ -1,0 +1,19 @@
+.Partners {
+  .Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Logo {
+    max-height: 100px;
+    max-width: 360px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+
+    margin: 20px;
+  }
+}
