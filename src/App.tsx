@@ -7,6 +7,7 @@ import Section from './components/Section'
 import './App.scss'
 import Team from './components/Team'
 import Partners from './components/Partners'
+import Timeline from './components/Timeline'
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       </Section>
       <Section headline='Sponsors and Partners'>
         <Partners />
+      </Section>
+      <Section headline='Timeline'>
+        <Timeline />
       </Section>
     </div >
   )

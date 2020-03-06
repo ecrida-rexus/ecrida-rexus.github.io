@@ -1,0 +1,18 @@
+.Timeline {
+  background-color: #e3e3e3;
+}
+
+.element {
+  text-align: left;
+
+  .Footer {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5px;
+  }
+
+  h4 {
+    margin: 0;
+    font-weight: 100;
+  }
+}
