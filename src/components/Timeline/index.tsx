@@ -40,9 +40,9 @@ export default class Timeline extends React.Component {
       <div className='Timeline'>
         <VerticalTimeline>
           {this.elements}
-          <VerticalTimelineElement
+          {/* <VerticalTimelineElement
             iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-          />
+          /> */}
         </VerticalTimeline>
       </div >
     )
