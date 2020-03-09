@@ -5,6 +5,7 @@ import SNSA from './assets/SNSA.png'
 import ESA from './assets/ESA.png'
 import Thales from './assets/Thales.png'
 import GMV from './assets/GMV.svg'
+import UPB from './assets/UPB.png'
 
 import './index.scss'
 
@@ -29,6 +30,11 @@ export default class Partners extends React.Component {
           </a>
           <a href='https://www.gmv.com/en/' target='_blank' rel='noopener noreferrer'>
             <img src={GMV} className='Logo' alt='GMV'></img>
+          </a>
+        </div>
+        <div className='Row'>
+          <a href='https://www.gmv.com/en/' target='_blank' rel='noopener noreferrer'>
+            <img src={UPB} className='Logo' alt='UPB'></img>
           </a>
         </div>
       </div >

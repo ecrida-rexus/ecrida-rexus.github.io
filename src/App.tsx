@@ -9,6 +9,7 @@ import './App.scss'
 import Team from './components/Team'
 import Partners from './components/Partners'
 import Timeline from './components/Timeline'
+import Experiment from './components/Experiment'
 
 export interface IAppState {
   isModalOpen: boolean
@@ -37,6 +38,9 @@ export default class App extends React.Component {
         <Introduction />
         <Section headline='Meet our team'>
           <Team />
+        </Section>
+        <Section headline='Experiment'>
+          <Experiment />
         </Section>
         <Section headline='Timeline' onExpand={this.onExpand}>
           <Timeline />
