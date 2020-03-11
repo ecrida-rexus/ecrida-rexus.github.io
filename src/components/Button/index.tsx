@@ -3,8 +3,8 @@ import React from 'react'
 import './index.scss'
 
 export interface IButtonProps {
-  text: string
-  url: string
+  text?: string
+  url?: string
   onClick?: () => void
 }
 

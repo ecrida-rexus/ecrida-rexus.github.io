@@ -1,38 +1,54 @@
 import React from 'react'
 
+import { getExperiment } from '../../services/Experiment'
+import { ExperimentResponse } from '../../services/Experiment/types'
+
 import './index.scss'
 
-export default class Experiment extends React.Component {
-  isURL = (str: string) => {
-    var pattern = new RegExp('^(https?:\\/\\/)?' + // protocol
-      '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.?)+[a-z]{2,}|' + // domain name
-      '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
-      '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
-      '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
-      '(\\#[-a-z\\d_]*)?$', 'i'); // fragment locator
-    return pattern.test(str);
+export interface IExperimentProps {
+}
+
+export interface IExperimentState {
+  content: ExperimentResponse
+}
+
+export default class Experiment extends React.Component<IExperimentProps, IExperimentState> {
+  state: IExperimentState = {
+    content: []
+  }
+
+  async componentDidMount() {
+    const fetchedContent = await getExperiment()
+
+    this.setState({ content: fetchedContent })
   }
 
   get content() {
-    const a = [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod id lectus non blandit. Vestibulum rutrum aliquam felis a rutrum. In augue leo, faucibus in odio non, pulvinar accumsan lectus. Integer pretium sit amet justo sit amet vulputate. Sed et sem ante. Praesent placerat lorem vitae lorem blandit tincidunt. Fusce suscipit, neque a volutpat lobortis, risus libero suscipit justo, ac malesuada dolor dui eu quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod id lectus non blandit. Vestibulum rutrum aliquam felis a rutrum. In augue leo, faucibus in odio non, pulvinar accumsan lectus. Integer pretium sit amet justo sit amet vulputate. Sed et sem ante. Praesent placerat lorem vitae lorem blandit tincidunt. Fusce suscipit, neque a volutpat lobortis, risus libero suscipit justo, ac malesuada dolor dui eu quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      ['https://i.picsum.photos/id/818/700/500.jpg', 'https://i.picsum.photos/id/819/700/500.jpg'],
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit.',
-    ]
-    return a.map(item => {
-      if (typeof item == 'string') {
-        return <p>{item}</p>
+    return this.state.content.map(item => {
+      if (Array.isArray(item)) {
+        return <div className='Row'>
+          {item.map(source => {
+            if ('img' in source) {
+              return <img src={source.img} alt='' />
+            }
+            if ('video' in source) {
+              return <video src={source.video} autoPlay muted loop />
+            }
+            return null
+          })}
+        </div>
       } else {
-        return (
-          <div className='Row'>
-            {item.map(url => <img src={url} alt='' />)}
-          </div>
-        )
+        if ('p' in item) {
+          return <p>{item.p}</p>
+        }
+        if ('h1' in item) {
+          return <h1>{item.h1}</h1>
+        }
+        if ('h2' in item) {
+          return <h2>{item.h2}</h2>
+        }
+        return null
       }
-
-
-      // return this.isURL(item) ? <div className='Row'><img src={item} alt=''></img></div> : <p>{item}</p>
     })
   }
 

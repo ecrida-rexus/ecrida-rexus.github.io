@@ -33,7 +33,7 @@ export default class Partners extends React.Component {
           </a>
         </div>
         <div className='Row'>
-          <a href='https://www.gmv.com/en/' target='_blank' rel='noopener noreferrer'>
+          <a href='https://upb.ro/en/' target=' _blank' rel='noopener noreferrer'>
             <img src={UPB} className='Logo' alt='UPB'></img>
           </a>
         </div>

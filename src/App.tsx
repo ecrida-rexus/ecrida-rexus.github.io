@@ -1,5 +1,5 @@
 import React from 'react'
-import Modal from 'react-modal'
+// import Modal from 'react-modal'
 
 import Header from './components/Header'
 import Introduction from './components/Introduction'
@@ -48,15 +48,6 @@ export default class App extends React.Component {
         <Section headline='Sponsors and Partners'>
           <Partners />
         </Section>
-        <Modal
-          isOpen={this.state.isModalOpen}
-          onRequestClose={this.onCollapse}
-          className="Modal"
-        >
-          <Section headline='Timeline'>
-            <Timeline />
-          </Section>
-        </Modal>
       </div >
     )
   }
