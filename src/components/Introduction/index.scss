@@ -1,3 +1,5 @@
+@import '~react-image-gallery/styles/scss/image-gallery.scss';
+
 .Introduction {
   height: calc(100vh - 80px);
 
@@ -54,12 +56,43 @@
     }
   }
 
-  .Image {
+  // .Image {
+  //   // height: 500px;
+  //   // width: auto;
+
+  //   border-radius: 5px;
+  // }
+
+  .image-gallery-slide img {
+    width: 800px;
     height: 500px;
-    width: auto;
+
+    object-fit: cover;
+
+    outline: none;
 
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(black, 0.1);
+  }
+
+  .image-gallery-left-nav,
+  .image-gallery-right-nav {
+    opacity: 30%;
+  }
+
+  .image-gallery-left-nav:hover,
+  .image-gallery-right-nav:hover {
+    opacity: 100%;
+  }
+
+  .image-gallery-description {
+    left: auto;
+    right: 0;
+    bottom: 8px;
+  }
+
+  .image-gallery-bullet {
+    box-shadow: none;
   }
 
   .Decoration {
