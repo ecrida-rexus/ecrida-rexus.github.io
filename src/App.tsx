@@ -1,5 +1,4 @@
 import React from 'react'
-// import Modal from 'react-modal'
 
 import Header from './components/Header'
 import Introduction from './components/Introduction'
@@ -10,6 +9,7 @@ import Team from './components/Team'
 import Partners from './components/Partners'
 import Timeline from './components/Timeline'
 import Experiment from './components/Experiment'
+import Footer from './components/Footer'
 
 export interface IAppState {
   isModalOpen: boolean
@@ -48,6 +48,7 @@ export default class App extends React.Component {
         <Section headline='Sponsors and Partners'>
           <Partners />
         </Section>
+        <Footer />
       </div >
     )
   }
