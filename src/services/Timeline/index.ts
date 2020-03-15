@@ -5,7 +5,7 @@ import { TimelineResponse } from './types'
 export async function getTimeline(): Promise<TimelineResponse> {
   try {
     const response = await Axios.get(
-      'https://raw.githubusercontent.com/mihaipredoiu/ecrida/master/src/data/Timeline.json?token=AMTYZWLJQGOUQHDU7WWPZ7K6O3LFW'
+      'https://raw.githubusercontent.com/ecrida-rexus/ecrida-rexus.github.io/develop/src/data/Timeline.json'
     )
     return response.data as TimelineResponse
   } catch (e) {
