@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1997e69d.chunk.css",
+    "main.js": "/static/js/main.ffb27887.chunk.js",
+    "main.js.map": "/static/js/main.ffb27887.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fca6e774.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fca6e774.js.map",
+    "static/css/2.a641e29a.chunk.css": "/static/css/2.a641e29a.chunk.css",
+    "static/js/2.efc37fbb.chunk.js": "/static/js/2.efc37fbb.chunk.js",
+    "static/js/2.efc37fbb.chunk.js.map": "/static/js/2.efc37fbb.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.be2a55e0f3d9e9146cdb66969f5f5d2c.js": "/precache-manifest.be2a55e0f3d9e9146cdb66969f5f5d2c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.a641e29a.chunk.css.map": "/static/css/2.a641e29a.chunk.css.map",
+    "static/css/main.1997e69d.chunk.css.map": "/static/css/main.1997e69d.chunk.css.map",
+    "static/js/2.efc37fbb.chunk.js.LICENSE.txt": "/static/js/2.efc37fbb.chunk.js.LICENSE.txt",
+    "static/media/DLR.png": "/static/media/DLR.4643134b.png",
+    "static/media/Decoration.svg": "/static/media/Decoration.51fc62e0.svg",
+    "static/media/ESA.png": "/static/media/ESA.752251e8.png",
+    "static/media/Facebook.svg": "/static/media/Facebook.c5a2bfb2.svg",
+    "static/media/GMV.svg": "/static/media/GMV.e44cead6.svg",
+    "static/media/Instagram.svg": "/static/media/Instagram.a2bcf892.svg",
+    "static/media/Kiruna.jpg": "/static/media/Kiruna.15849818.jpg",
+    "static/media/Linkedin.svg": "/static/media/Linkedin.eee662bb.svg",
+    "static/media/Logo.svg": "/static/media/Logo.f1c2263d.svg",
+    "static/media/Noordwijk.jpg": "/static/media/Noordwijk.7de091fb.jpg",
+    "static/media/OpenButton.svg": "/static/media/OpenButton.0b57a251.svg",
+    "static/media/RexusBexus.png": "/static/media/RexusBexus.ab73943c.png",
+    "static/media/SNSA.png": "/static/media/SNSA.2b882373.png",
+    "static/media/Thales.png": "/static/media/Thales.f0665c20.png",
+    "static/media/UPB.png": "/static/media/UPB.174cb75c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fca6e774.js",
+    "static/css/2.a641e29a.chunk.css",
+    "static/js/2.efc37fbb.chunk.js",
+    "static/css/main.1997e69d.chunk.css",
+    "static/js/main.ffb27887.chunk.js"
+  ]
+}
