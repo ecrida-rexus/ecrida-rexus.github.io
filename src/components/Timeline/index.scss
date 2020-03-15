@@ -14,16 +14,29 @@
   }
 
   p {
-    margin: 0;
+    margin: 0.25em 1em;
   }
 
   .Footer {
     display: flex;
     flex-direction: row-reverse;
+    margin: 0 1em;
   }
 
   h4 {
-    margin: 0;
+    margin: 0.25em 1em;
     font-weight: 100;
+  }
+
+  .vertical-timeline-element-content {
+    padding: 0 0 1em 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .element {
+    .vertical-timeline-element-content {
+      padding: 0;
+    }
   }
 }

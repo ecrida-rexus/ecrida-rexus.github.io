@@ -40,3 +40,32 @@
     font-weight: 500;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .Experiment {
+    padding: 0 5%;
+
+    .Row {
+      flex-wrap: wrap;
+    }
+
+    img,
+    video {
+      max-width: 80vw;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin: 12px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+}

@@ -3,6 +3,8 @@
 .Introduction {
   height: calc(100vh - 80px);
 
+  margin-top: 80px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -56,13 +58,6 @@
     }
   }
 
-  // .Image {
-  //   // height: 500px;
-  //   // width: auto;
-
-  //   border-radius: 5px;
-  // }
-
   .image-gallery-slide img {
     width: 800px;
     height: 500px;
@@ -99,5 +94,68 @@
     width: 100%;
 
     align-self: flex-end;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Introduction {
+    height: fit-content;
+
+    margin-top: 60px;
+
+    .Content {
+      height: fit-content;
+
+      flex-direction: column;
+
+      padding: 0 20px;
+
+      .image-gallery-slide img {
+        width: 90vw;
+        height: auto;
+
+        object-fit: cover;
+
+        outline: none;
+
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(black, 0.1);
+      }
+
+      .image-gallery-description {
+        bottom: auto;
+        top: 8px;
+      }
+    }
+
+    .Presentation {
+      margin: 15px 0 0 0;
+
+      h1 {
+        font-size: 45px;
+        margin: 5px;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: 100;
+        margin: 5px;
+      }
+
+      p {
+        width: 100%;
+        font-size: 12px;
+      }
+    }
+
+    .Logos {
+      margin-top: 16px;
+
+      .Logo {
+        height: 120px;
+
+        margin: 0 16px;
+      }
+    }
   }
 }

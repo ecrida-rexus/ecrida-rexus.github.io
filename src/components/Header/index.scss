@@ -2,6 +2,9 @@
   height: 80px;
   width: 100%;
 
+  position: fixed;
+  top: 0;
+
   display: flex;
   flex-grow: 1;
   flex-direction: row;
@@ -13,13 +16,18 @@
   background-color: black;
   box-shadow: 0px 1px 5px #27272780;
 
+  z-index: 100;
+
   .Logo {
     height: 80%;
     align-self: center;
   }
 
-  .Group {
-    width: max-content;
+  .Ecrida,
+  .SectionLinks,
+  .SocialMediaLogos {
+    height: 80px;
+    width: fit-content;
 
     display: flex;
     flex-direction: row;
@@ -36,13 +44,87 @@
 
   a {
     height: 100%;
-    width: 100%;
+    width: fit-content;
+
+    cursor: pointer;
 
     display: flex;
     align-items: center;
 
     .SocialMediaIcon {
       height: 50%;
+    }
+  }
+
+  .MenuButton {
+    height: 50%;
+    margin-left: 20px;
+    display: none;
+  }
+
+  .SectionLinks {
+    a {
+      margin: 0 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Header {
+    height: 60px;
+    padding: 0 20px;
+
+    transition: all 0.2s linear;
+
+    .SectionLinks {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .SectionLinks {
+      display: none;
+    }
+
+    .Ecrida,
+    .SocialMediaLogos,
+    .SectionLinks {
+      height: 60px;
+    }
+
+    .MenuButton {
+      display: flex;
+    }
+
+    &.expanded {
+      height: 200px;
+      transition: all 0.2s linear;
+
+      .SectionLinks {
+        display: flex;
+        flex-direction: column;
+        transition: all 0.4s ease-in;
+        margin-top: 60px;
+        animation: mymove 0.4s;
+
+        @keyframes mymove {
+          from {
+            top: -60px;
+            opacity: 0%;
+          }
+          to {
+            top: 0px;
+            opacity: 100%;
+          }
+        }
+
+        p {
+          margin-top: 10px;
+          font-size: 18px;
+        }
+      }
     }
   }
 }

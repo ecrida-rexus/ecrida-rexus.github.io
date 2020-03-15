@@ -15,9 +15,9 @@ export default class Team extends React.Component {
           <TeamMember fullName='Lorem Ipsum' image={Image} role='Team Leader' />
           <TeamMember fullName='Lorem Ipsum' image={Image} role='Team Leader' />
           <TeamMember fullName='Lorem Ipsum' image={Image} role='Team Leader' />
-          <TeamMember fullName='Lorem Ipsum' image={Image} role='Team Leader' />
         </div>
         <div className='Row'>
+          <TeamMember fullName='Lorem Ipsum' image={Image} role='Team Leader' />
           <TeamMember fullName='Lorem Ipsum' image={Image} role='Team Leader' />
           <TeamMember fullName='Lorem Ipsum' image={Image} role='Team Leader' />
           <TeamMember fullName='Lorem Ipsum' image={Image} role='Team Leader' />

@@ -17,3 +17,23 @@
     margin: 20px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .Partners {
+    .Row {
+      flex-wrap: wrap;
+    }
+
+    .Logo {
+      max-width: 40vw;
+      max-height: 80px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+
+      margin: 8px 10px;
+    }
+  }
+}

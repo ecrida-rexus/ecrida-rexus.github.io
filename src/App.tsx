@@ -11,6 +11,8 @@ import Timeline from './components/Timeline'
 import Experiment from './components/Experiment'
 import Footer from './components/Footer'
 
+import { Element } from 'react-scroll'
+
 export interface IAppState {
   isModalOpen: boolean
 }
@@ -30,24 +32,33 @@ export default class App extends React.Component {
     document.body.style.overflow = 'unset'
   }
 
-
   public render() {
     return (
       <div className='App'>
         <Header />
-        <Introduction />
-        <Section headline='Meet our team'>
-          <Team />
-        </Section>
-        <Section headline='Experiment'>
-          <Experiment />
-        </Section>
-        <Section headline='Timeline' onExpand={this.onExpand}>
-          <Timeline />
-        </Section>
-        <Section headline='Sponsors and Partners'>
-          <Partners />
-        </Section>
+        <Element name='introduction'>
+          <Introduction />
+        </Element>
+        <Element name='team'>
+          <Section headline='Meet our team'>
+            <Team />
+          </Section>
+        </Element>
+        <Element name='experiment'>
+          <Section headline='Experiment'>
+            <Experiment />
+          </Section>
+        </Element>
+        <Element name='timeline'>
+          <Section headline='Timeline'>
+            <Timeline />
+          </Section>
+        </Element>
+        <Element name='partners'>
+          <Section headline='Sponsors and Partners'>
+            <Partners />
+          </Section>
+        </Element>
         <Footer />
       </div >
     )
