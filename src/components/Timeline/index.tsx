@@ -10,6 +10,8 @@ import Button from '../Button'
 
 import './index.scss'
 
+import Timel from '../../data/Timeline.json'
+
 export interface ITimelineProps {
 }
 
@@ -23,9 +25,9 @@ export default class Timeline extends React.Component {
   }
 
   async componentDidMount() {
-    const fetchedContent = await getTimeline()
+    // const fetchedContent = await getTimeline()
 
-    this.setState({ content: fetchedContent })
+    this.setState({ content: Timel })
   }
 
   get elements() {
@@ -50,9 +52,6 @@ export default class Timeline extends React.Component {
       <div className='Timeline'>
         <VerticalTimeline>
           {this.elements}
-          <VerticalTimelineElement
-            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-          />
         </VerticalTimeline>
       </div >
     )

@@ -19,13 +19,14 @@
   z-index: 100;
 
   .Logo {
-    height: 80%;
+    height: 100%;
     align-self: center;
   }
 
   .Ecrida,
   .SectionLinks,
-  .SocialMediaLogos {
+  .SocialMediaLogos,
+  .MenuButtonContainer {
     height: 80px;
     width: fit-content;
 
@@ -33,6 +34,36 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-self: center;
+    height: 100%;
+    opacity: 100%;
+    transition: all 0.3s;
+
+    p {
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+
+  .SocialMediaLogos,
+  .MenuButtonContainer {
+    height: fit-content;
+
+    a {
+      height: 45px;
+      width: 45px;
+    }
+  }
+
+  .MenuButtonContainer {
+    align-self: flex-start;
   }
 
   p {
@@ -43,7 +74,7 @@
   }
 
   a {
-    height: 100%;
+    height: 80%;
     width: fit-content;
 
     cursor: pointer;
@@ -52,13 +83,12 @@
     align-items: center;
 
     .SocialMediaIcon {
-      height: 50%;
+      height: 70%;
     }
   }
 
   .MenuButton {
     height: 50%;
-    margin-left: 20px;
     display: none;
   }
 
@@ -90,8 +120,25 @@
 
     .Ecrida,
     .SocialMediaLogos,
+    .MenuButtonContainer,
     .SectionLinks {
       height: 60px;
+    }
+
+    .Controls {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .Contact {
+      height: 60px;
+      align-self: flex-start;
+
+      p {
+        font-size: 11px;
+        margin-bottom: 5px;
+      }
     }
 
     .MenuButton {
@@ -124,6 +171,11 @@
           margin-top: 10px;
           font-size: 18px;
         }
+      }
+
+      .Contact {
+        opacity: 0;
+        transition: all 0.4s;
       }
     }
   }

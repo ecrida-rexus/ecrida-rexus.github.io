@@ -54,22 +54,30 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
             <p>Sponsors and Partners</p>
           </Link>
         </div>
-        <div className='SocialMediaLogos'>
-          <a href='https://www.facebook.com/projectecrida' target='_blank' rel='noopener noreferrer'>
-            <img src={Facebook} className='SocialMediaIcon' alt='logo' />
-          </a>
-          <a href='https://www.instagram.com/projectecrida/' target='_blank' rel='noopener noreferrer'>
-            <img src={Instagram} className='SocialMediaIcon' alt='logo' />
-          </a>
-          <a href='https://www.linkedin.com/company/ecrida-rexus-program/about/' target='_blank' rel='noopener noreferrer'>
-            <img src={Linkedin} className='SocialMediaIcon' alt='logo' />
-          </a>
-          <img
-            className='MenuButton'
-            src={OpenButton}
-            alt='open-button'
-            onClick={this.onMenuExpand}
-          />
+        <div className='Controls'>
+          <div className='Contact'>
+            <div className='SocialMediaLogos'>
+              <a href='https://www.facebook.com/projectecrida' target='_blank' rel='noopener noreferrer'>
+                <img src={Facebook} className='SocialMediaIcon' alt='logo' />
+              </a>
+              <a href='https://www.instagram.com/projectecrida/' target='_blank' rel='noopener noreferrer'>
+                <img src={Instagram} className='SocialMediaIcon' alt='logo' />
+              </a>
+              <a href='https://www.linkedin.com/company/ecrida-rexus-program/about/' target='_blank' rel='noopener noreferrer'>
+                <img src={Linkedin} className='SocialMediaIcon' alt='logo' />
+              </a>
+
+            </div>
+            <p>ecrida.rexus@gmail.com</p>
+          </div>
+          <div className='MenuButtonContainer'>
+            <img
+              className='MenuButton'
+              src={OpenButton}
+              alt='open-button'
+              onClick={this.onMenuExpand}
+            />
+          </div>
         </div>
       </div >
     )

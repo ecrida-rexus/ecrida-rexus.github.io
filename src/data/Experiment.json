@@ -1,30 +1,45 @@
 [
+  { "h2": "Abstract" },
   {
-    "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod id lectus non blandit. Vestibulum rutrum aliquam felis a rutrum. In augue leo, faucibus in odio non, pulvinar accumsan lectus. Integer pretium sit amet justo sit amet vulputate. Sed et sem ante. Praesent placerat lorem vitae lorem blandit tincidunt. Fusce suscipit, neque a volutpat lobortis, risus libero suscipit justo, ac malesuada dolor dui eu quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "p": "During supply missions, objects may get broken or damaged and this can cause extra costs and delays for on-going space missions. Additive manufacturing techniques may have a great impact on future space applications. Sending in orbit raw materials that can be transformed into useful objects can reduce the cost and the duration of space missions."
+  },
+  { "h2": "Experiment concept" },
+  {
+    "p": "The main goal of the ECRIDA experiment is to design and test a DLP-like printer for manufacturing 3D objects on-board of the REXUS 29 rocket. Digital Light Processing (DLP) is a 3D printing technology based on curing UV sensitive resin with the help of a UV lamp, fronted by a LCD display and a moving build plate. In our implementation, the LCD display is replaced by a photomask that allows the light to pass only through predefined shapes. Each layer is printed by lightning up the UV lamp and waiting until the resin solidifies and sticks to the build plate. Then, with the help of an actuator, the build plate is raised with the next layer’s size and the process is repeated until the object gets fully printed. We aim to manufacture test specimens with a thickness of 1 mm during the reduced gravity period and to compare them with specimens printed in terrestrial conditions by performing material analysis procedures."
   },
   {
-    "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod id lectus non blandit. Vestibulum rutrum aliquam felis a rutrum. "
+    "p": "The experiment concept will be described using the schematic diagram of the experimental set-up, which consists of 3 major assemblies."
   },
   [
     {
-      "img": "https://upb.ro/wp-content/uploads/2019/12/ECRIDA-din-cadrul-UPB-reprezinta-Rom%C3%A2nia-in-REXUS-BEXUS.jpg,"
+      "img": "https://i.imgur.com/KcbbNFt.png"
     },
     {
-      "video": "https://ak8.picdn.net/shutterstock/videos/1011036248/preview/stock-footage-space-launch-system-takes-off-realistic-d-animation-k-ultra-high-definition-x.webm"
+      "img": "https://i.imgur.com/WsqAEHL.png"
     }
   ],
-  { "h2": "Lorem ipsum dolor sit amet" },
   {
-    "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod id lectus non blandit. Vestibulum rutrum aliquam felis a rutrum. In augue leo, faucibus in odio non, pulvinar accumsan lectus. Integer pretium sit amet justo sit amet vulputate. Sed et sem ante. Praesent placerat lorem vitae lorem blandit tincidunt. Fusce suscipit, neque a volutpat lobortis, risus libero suscipit justo, ac malesuada dolor dui eu quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "h2": "Experiment working principle"
   },
-  { "h1": "Lorem lorem" },
-  { "h2": "Lorem ipsum dolor sit amet" },
   {
-    "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod id lectus non blandit. Vestibulum rutrum aliquam felis a rutrum. In augue leo, faucibus in odio non, pulvinar accumsan lectus. Integer pretium sit amet justo sit amet vulputate. Sed et sem ante. Praesent placerat lorem vitae lorem blandit tincidunt. Fusce suscipit, neque a volutpat lobortis, risus libero suscipit justo, ac malesuada dolor dui eu quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "p": "At the ground, the vat (resin container) is manually filled, with resin through the inlet port, placed on the bottom of the vat."
+  },
+  {
+    "p": "When miligravity conditions are achieved, the printing process will be initiated. Twenty-four specimens will be printed layer by layer, by lighting up the UV blacklight and raising the build plate accordingly. The build plate is raised, at each step, on a distance equal to the desired layer thickness."
+  },
+  {
+    "p": "Considering the temperature sensitivity of the experiment, the temperature of the resin will be supervised using four sensors mounted on each lateral wall of the vat (resin container). Additionally, a temperature sensor will be placed in the module to measure the ambient temperature and an accelerometer will be used to provide information about vibrations and shocks."
+  },
+  {
+    "p": "The data measured will be provided to the ground station via telemetry and it will also be saved on an SD card. After the recovery of the module, the probes will be safely extracted by dissolving one layer of the build plate made of a soluble plastic material. The probes will be carefully cleaned and post analysis will be performed in order to compare them with similar probes printed on Earth."
+  },
+  { "h2": "Mechanical design" },
+  {
+    "p": "The structure consists of aluminium parts that are milled and off the shelf components joined together with bolts, nuts and grower washers."
   },
   [
-    { "img": "https://i.picsum.photos/id/817/700/500.jpg" },
-    { "img": "https://i.picsum.photos/id/811/700/500.jpg" },
-    { "img": "https://i.picsum.photos/id/819/700/500.jpg" }
+    {
+      "img": "https://i.imgur.com/liEoQs1.png"
+    }
   ]
 ]

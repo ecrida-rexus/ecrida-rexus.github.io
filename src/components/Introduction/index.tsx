@@ -4,6 +4,8 @@ import ImageGallery from 'react-image-gallery'
 
 import RexusBexus from './assets/RexusBexus.png'
 import Logo from './assets/Logo.svg'
+
+import Bucharest from './assets/Bucharest.jpg'
 import Noordwijk from './assets/Noordwijk.jpg'
 import Kiruna from './assets/Kiruna.jpg'
 import Decoration from './assets/Decoration.svg'
@@ -18,12 +20,16 @@ export interface IIntroductionState {
 
 const images = [
   {
+    original: Bucharest,
+    description: 'Bucharest, Romania 🇷🇴'
+  },
+  {
     original: Kiruna,
-    description: 'Kiruna, Sweden'
+    description: 'Kiruna, Sweden 🇸🇪'
   },
   {
     original: Noordwijk,
-    description: 'Noordwijk, Netherlands, ESTEC Centre'
+    description: 'Noordwijk, Netherlands, ESTEC Centre 🇳🇱'
   },
 ];
 
@@ -39,14 +45,32 @@ export default class Introduction extends React.Component<IIntroductionProps, II
             <h1>We are ECRIDA</h1>
             <h2>a REXUS Student Experiment Programme team</h2>
             <div className='Logos'>
-              <img src={Logo} className='Logo' alt='logo' />
+              <div className='EcridaContainer'>
+                <img src={Logo} className='Logo' alt='logo' />
+              </div>
               <a href='http://rexusbexus.net/' target='_blank' rel='noopener noreferrer'>
                 <img src={RexusBexus} className='Logo' alt='logo' />
               </a>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>
+              ECRIDA is a Romanian multidisciplinary team of 9 students from 2
+              universities which participates in the REXUS CYCLE 13 programme.
+              We propose the study of the 3D printing phenomenon using UV resin
+              polymerization in a low gravity environment.
+            </p>
+            <p>
+              REXUS is a campaign organized by a bilateral Agency
+              Agreement between the German Aerospace Center (DLR)
+              and the Swedish National Space Agency (SNSA) in
+              cooperation with European Space Agency ESA. It gives
+              European students the opportunity to carry out
+              scientific experiments in low gravity conditions
+              on-board a sounding rocket.
+            </p>
+            <p>
+              Our Experiment will be launched inside the RX29 rocket in 2021 from the Polar Circle.
+</p>
           </div>
-          {/* <img src={TeamImage} className='Image' alt='decoration' /> */}
           <ImageGallery items={images} showThumbnails={false} showFullscreenButton={false} showPlayButton={false} showBullets />
         </div>
         <img src={Decoration} className='Decoration' alt='decoration' />
