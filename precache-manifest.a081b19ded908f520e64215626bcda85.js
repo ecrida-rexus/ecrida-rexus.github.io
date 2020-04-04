@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3248f077e808c28626f068cb706548b1",
+    "revision": "8591686bda4e6084dc93bde9525186e3",
     "url": "/index.html"
   },
   {
-    "revision": "e18f099a5adddbcf7a5f",
+    "revision": "0fff3a5a3a78970fe45e",
     "url": "/static/css/2.a641e29a.chunk.css"
   },
   {
-    "revision": "3eea29a6e6db32e5eda9",
-    "url": "/static/css/main.ed978378.chunk.css"
+    "revision": "bdf746cc94c051b6e03f",
+    "url": "/static/css/main.847528b4.chunk.css"
   },
   {
-    "revision": "e18f099a5adddbcf7a5f",
-    "url": "/static/js/2.de2ebeed.chunk.js"
+    "revision": "0fff3a5a3a78970fe45e",
+    "url": "/static/js/2.08911639.chunk.js"
   },
   {
     "revision": "11a928b57aca5049fe950bf8bcde77c5",
-    "url": "/static/js/2.de2ebeed.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.08911639.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3eea29a6e6db32e5eda9",
-    "url": "/static/js/main.084dc5db.chunk.js"
+    "revision": "bdf746cc94c051b6e03f",
+    "url": "/static/js/main.8552be67.chunk.js"
   },
   {
     "revision": "15860eed28e05af45a1c",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Facebook.c5a2bfb2.svg"
   },
   {
-    "revision": "e44cead624cdee397269ee1ffdc0a483",
-    "url": "/static/media/GMV.e44cead6.svg"
+    "revision": "65096627055e13d59018aa270c8bed18",
+    "url": "/static/media/GMV.65096627.svg"
   },
   {
     "revision": "a2bcf89291d23dd2956c52b5d3a8f1b1",
@@ -120,10 +120,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Paul.a306087d.jpg"
   },
   {
-    "revision": "f95da538917cb72f5840fc41c0261bad",
-    "url": "/static/media/ROSA.f95da538.gif"
-  },
-  {
     "revision": "3dfb1831a9c9f1eb0db12329a936367e",
     "url": "/static/media/Radu.3dfb1831.jpg"
   },
@@ -138,10 +134,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2b8823734c76934e7cd36cdc92e080e5",
     "url": "/static/media/SNSA.2b882373.png"
-  },
-  {
-    "revision": "f0665c20778ff80a12d6f93e0604d76e",
-    "url": "/static/media/Thales.f0665c20.png"
   },
   {
     "revision": "174cb75cc7c36a87ef9b74c45eee39e0",
