@@ -145,6 +145,20 @@
       display: flex;
     }
 
+    .MenuButton {
+      background-position: center;
+      transition: background 0.3s;
+    }
+    .MenuButton:hover {
+      background: transparent
+        radial-gradient(circle, transparent 1%, transparent 1%) center/15000%;
+    }
+    .MenuButton:active {
+      background-color: rgba(255, 255, 255, 0.3);
+      background-size: 100%;
+      transition: background 0s;
+    }
+
     &.expanded {
       height: 200px;
       transition: all 0.2s linear;
@@ -176,6 +190,10 @@
       .Contact {
         opacity: 0;
         transition: all 0.4s;
+      }
+
+      .MenuButton {
+        animation: pulse 0.2s;
       }
     }
   }

@@ -10,8 +10,6 @@ import Button from '../Button'
 
 import './index.scss'
 
-import Timel from '../../data/Timeline.json'
-
 export interface ITimelineProps {
 }
 
@@ -25,9 +23,9 @@ export default class Timeline extends React.Component {
   }
 
   async componentDidMount() {
-    // const fetchedContent = await getTimeline()
+    const fetchedContent = await getTimeline()
 
-    this.setState({ content: Timel })
+    this.setState({ content: fetchedContent })
   }
 
   get elements() {

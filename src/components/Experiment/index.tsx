@@ -2,7 +2,6 @@ import React from 'react'
 
 import { getExperiment } from '../../services/Experiment'
 import { ExperimentResponse } from '../../services/Experiment/types'
-import Exp from '../../data/Experiment.json'
 
 import './index.scss'
 
@@ -19,9 +18,9 @@ export default class Experiment extends React.Component<IExperimentProps, IExper
   }
 
   async componentDidMount() {
-    // const fetchedContent = await getExperiment()
+    const fetchedContent = await getExperiment()
 
-    this.setState({ content: Exp })
+    this.setState({ content: fetchedContent })
   }
 
   get content() {
