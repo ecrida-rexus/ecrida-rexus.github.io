@@ -45,9 +45,9 @@ export default class Introduction extends React.Component<IIntroductionProps, II
             <h1>We are ECRIDA</h1>
             <h2>a REXUS Student Experiment Programme team</h2>
             <div className='Logos'>
-              <img src={Logo} className='Logo' alt='logo' />
+              <img src={Logo} className='Logo' alt='Project ECRIDA Logo' />
               <a href='http://rexusbexus.net/' target='_blank' rel='noopener noreferrer'>
-                <img src={RexusBexus} className='Logo' alt='logo' />
+                <img src={RexusBexus} className='Logo' alt='REXUS/BEXUS Logo' />
               </a>
             </div>
             <p>
