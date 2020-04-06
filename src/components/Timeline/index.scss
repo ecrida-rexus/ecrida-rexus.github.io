@@ -35,15 +35,13 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1169px) {
   .element {
     .vertical-timeline-element-content {
       padding: 0;
     }
   }
-}
 
-@media only screen and (max-width: 1169px) {
   .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
     visibility: visible;
     animation: timeline-slide 0.6s;
