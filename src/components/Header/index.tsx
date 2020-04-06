@@ -37,7 +37,7 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
       <div className={`Header ${this.state.isExpanded ? 'expanded' : ''}`} >
         <div className='Ecrida'>
           <Link offset={-80} to='introduction' smooth={true} duration={500}>
-            <img src={Logo} className='Logo' alt='logo' />
+            <img src={Logo} className='Logo' alt='Project ECRIDA Logo' />
           </Link>
         </div>
         <div className='SectionLinks'>
@@ -58,13 +58,13 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
           <div className='Contact'>
             <div className='SocialMediaLogos'>
               <a href='https://www.facebook.com/projectecrida' target='_blank' rel='noopener noreferrer'>
-                <img src={Facebook} className='SocialMediaIcon' alt='logo' />
+                <img src={Facebook} className='SocialMediaIcon' alt='Facebook Logo' />
               </a>
               <a href='https://www.instagram.com/projectecrida/' target='_blank' rel='noopener noreferrer'>
-                <img src={Instagram} className='SocialMediaIcon' alt='logo' />
+                <img src={Instagram} className='SocialMediaIcon' alt='Instagram Logo' />
               </a>
               <a href='https://www.linkedin.com/company/ecrida-rexus-program/about/' target='_blank' rel='noopener noreferrer'>
-                <img src={Linkedin} className='SocialMediaIcon' alt='logo' />
+                <img src={Linkedin} className='SocialMediaIcon' alt='Linkedin Logo' />
               </a>
 
             </div>

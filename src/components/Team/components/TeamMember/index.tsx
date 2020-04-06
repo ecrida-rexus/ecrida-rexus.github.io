@@ -18,7 +18,7 @@ export default class TeamMember extends React.Component<ITeamMemberProps, ITeamM
   public render() {
     return (
       <div className='TeamMember'>
-        <img src={this.props.image} className='Image' alt=''></img>
+        <img src={this.props.image} className='Image' alt={this.props.fullName}></img>
         <h1>{this.props.fullName}</h1>
         <h2>{this.props.role}</h2>
       </div >
