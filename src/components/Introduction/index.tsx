@@ -45,15 +45,13 @@ export default class Introduction extends React.Component<IIntroductionProps, II
             <h1>We are ECRIDA</h1>
             <h2>a REXUS Student Experiment Programme team</h2>
             <div className='Logos'>
-              <div className='EcridaContainer'>
-                <img src={Logo} className='Logo' alt='logo' />
-              </div>
+              <img src={Logo} className='Logo' alt='logo' />
               <a href='http://rexusbexus.net/' target='_blank' rel='noopener noreferrer'>
                 <img src={RexusBexus} className='Logo' alt='logo' />
               </a>
             </div>
             <p>
-              ECRIDA is a Romanian multidisciplinary team of 9 students from 2
+              ECRIDA is a Romanian multidisciplinary team of 10 students from 2
               universities which participates in the REXUS CYCLE 13 programme.
               We propose the study of the 3D printing phenomenon using UV resin
               polymerization in a low gravity environment.
