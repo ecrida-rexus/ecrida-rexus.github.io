@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.33748df7.chunk.css",
-    "main.js": "/static/js/main.6d41825c.chunk.js",
-    "main.js.map": "/static/js/main.6d41825c.chunk.js.map",
+    "main.css": "/static/css/main.a56f4a5b.chunk.css",
+    "main.js": "/static/js/main.18d4e1f8.chunk.js",
+    "main.js.map": "/static/js/main.18d4e1f8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fca6e774.js",
     "runtime-main.js.map": "/static/js/runtime-main.fca6e774.js.map",
     "static/css/2.a641e29a.chunk.css": "/static/css/2.a641e29a.chunk.css",
-    "static/js/2.08911639.chunk.js": "/static/js/2.08911639.chunk.js",
-    "static/js/2.08911639.chunk.js.map": "/static/js/2.08911639.chunk.js.map",
+    "static/js/2.7d7f8567.chunk.js": "/static/js/2.7d7f8567.chunk.js",
+    "static/js/2.7d7f8567.chunk.js.map": "/static/js/2.7d7f8567.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bc53d47395ce0f30c61b42f9d5611ca0.js": "/precache-manifest.bc53d47395ce0f30c61b42f9d5611ca0.js",
+    "precache-manifest.57a24ef15bc1232ebaf259e2474cb965.js": "/precache-manifest.57a24ef15bc1232ebaf259e2474cb965.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.a641e29a.chunk.css.map": "/static/css/2.a641e29a.chunk.css.map",
-    "static/css/main.33748df7.chunk.css.map": "/static/css/main.33748df7.chunk.css.map",
-    "static/js/2.08911639.chunk.js.LICENSE.txt": "/static/js/2.08911639.chunk.js.LICENSE.txt",
+    "static/css/main.a56f4a5b.chunk.css.map": "/static/css/main.a56f4a5b.chunk.css.map",
+    "static/js/2.7d7f8567.chunk.js.LICENSE.txt": "/static/js/2.7d7f8567.chunk.js.LICENSE.txt",
     "static/media/ACS.png": "/static/media/ACS.daffe6bc.png",
     "static/media/Adrian.jpg": "/static/media/Adrian.10a36e9c.jpg",
     "static/media/Bucharest.jpg": "/static/media/Bucharest.ab977c80.jpg",
@@ -39,13 +39,14 @@
     "static/media/RexusBexus.png": "/static/media/RexusBexus.161b0d20.png",
     "static/media/Romica.jpg": "/static/media/Romica.bba7a9c3.jpg",
     "static/media/SNSA.png": "/static/media/SNSA.06071af0.png",
-    "static/media/UPB.png": "/static/media/UPB.38a83ccc.png"
+    "static/media/UPB.png": "/static/media/UPB.38a83ccc.png",
+    "static/media/Valentin.jpg": "/static/media/Valentin.4d343f3b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.fca6e774.js",
     "static/css/2.a641e29a.chunk.css",
-    "static/js/2.08911639.chunk.js",
-    "static/css/main.33748df7.chunk.css",
-    "static/js/main.6d41825c.chunk.js"
+    "static/js/2.7d7f8567.chunk.js",
+    "static/css/main.a56f4a5b.chunk.css",
+    "static/js/main.18d4e1f8.chunk.js"
   ]
 }
