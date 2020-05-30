@@ -1,42 +1,14 @@
 import React from 'react'
 
-import ImageGallery from 'react-image-gallery'
+import Countdown from '../Countdown'
 
 import RexusBexus from './assets/RexusBexus.png'
 import Logo from './assets/Logo.svg'
-
-import Bucharest from './assets/Bucharest.jpg'
-import Noordwijk from './assets/Noordwijk.jpg'
-import Kiruna from './assets/Kiruna.jpg'
 import Decoration from './assets/Decoration.svg'
 
 import './index.scss'
 
-export interface IIntroductionProps {
-}
-
-export interface IIntroductionState {
-}
-
-const images = [
-  {
-    original: Bucharest,
-    description: 'Bucharest, Romania 🇷🇴'
-  },
-  {
-    original: Kiruna,
-    description: 'Kiruna, Sweden 🇸🇪'
-  },
-  {
-    original: Noordwijk,
-    description: 'Noordwijk, Netherlands, ESTEC Centre 🇳🇱'
-  },
-];
-
-export default class Introduction extends React.Component<IIntroductionProps, IIntroductionState> {
-  state: IIntroductionState = {
-  }
-
+export default class Introduction extends React.Component {
   public render() {
     return (
       <div className='Introduction'>
@@ -69,7 +41,9 @@ export default class Introduction extends React.Component<IIntroductionProps, II
               from the Polar Circle, Sweden in March 2021.
             </p>
           </div>
-          <ImageGallery items={images} showThumbnails={false} showFullscreenButton={false} showPlayButton={false} showBullets />
+          <div className='SecondPresentation'>
+            <Countdown date={'2021-03-20T12:00:00'} />
+          </div>
         </div>
         <img src={Decoration} className='Decoration' alt='decoration' />
       </div >
