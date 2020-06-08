@@ -17,8 +17,8 @@ export default class Introduction extends React.Component {
             <h1>We are ECRIDA</h1>
             <h2>a REXUS Student Experiment Programme team</h2>
             <div className='Logos'>
-              <img src={Logo} className='Logo' alt='Project ECRIDA Logo' />
-              <a href='http://rexusbexus.net/' target='_blank' rel='noopener noreferrer'>
+              <img src={Logo} className='Logo' alt='' />
+              <a href='http://rexusbexus.net/' target='_blank' rel='noopener noreferrer nofollow'>
                 <img src={RexusBexus} className='Logo' alt='REXUS/BEXUS Logo' />
               </a>
             </div>
@@ -45,7 +45,7 @@ export default class Introduction extends React.Component {
             <Countdown date={'2021-03-20T12:00:00'} />
           </div>
         </div>
-        <img src={Decoration} className='Decoration' alt='decoration' />
+        <img src={Decoration} className='Decoration' alt='' />
       </div >
     )
   }

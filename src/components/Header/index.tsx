@@ -57,14 +57,14 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
         <div className='Controls'>
           <div className='Contact'>
             <div className='SocialMediaLogos'>
-              <a href='https://www.facebook.com/projectecrida' target='_blank' rel='noopener noreferrer'>
-                <img src={Facebook} className='SocialMediaIcon' alt='Facebook Logo' />
+              <a href='https://www.facebook.com/projectecrida' target='_blank' rel='noopener noreferrer nofollow'>
+                <img src={Facebook} className='SocialMediaIcon' alt='' />
               </a>
-              <a href='https://www.instagram.com/projectecrida/' target='_blank' rel='noopener noreferrer'>
-                <img src={Instagram} className='SocialMediaIcon' alt='Instagram Logo' />
+              <a href='https://www.instagram.com/projectecrida/' target='_blank' rel='noopener noreferrer nofollow'>
+                <img src={Instagram} className='SocialMediaIcon' alt='' />
               </a>
-              <a href='https://www.linkedin.com/company/ecrida-rexus-program/about/' target='_blank' rel='noopener noreferrer'>
-                <img src={Linkedin} className='SocialMediaIcon' alt='Linkedin Logo' />
+              <a href='https://www.linkedin.com/company/ecrida-rexus-program/about/' target='_blank' rel='noopener noreferrer nofollow'>
+                <img src={Linkedin} className='SocialMediaIcon' alt='' />
               </a>
 
             </div>
@@ -74,7 +74,7 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
             <img
               className='MenuButton'
               src={OpenButton}
-              alt='open-button'
+              alt=''
               onClick={this.onMenuExpand}
             />
           </div>
