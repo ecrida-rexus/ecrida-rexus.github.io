@@ -6,6 +6,21 @@
     flex-wrap: wrap;
   }
 
+  .CampusDescription {
+    width: 60%;
+    display: inline-block;
+  }
+
+  .Campus {
+    width: 40%;
+    margin: 20px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    object-fit: cover;
+  }
+
   .image-gallery-description {
     right: 0;
     bottom: auto;
@@ -48,6 +63,14 @@
     .Row {
       flex-wrap: wrap;
       margin-bottom: 20px;
+    }
+
+    .Campus {
+      width: 80%;
+    }
+
+    .CampusDescription {
+      width: 80%;
     }
 
     .image-gallery,

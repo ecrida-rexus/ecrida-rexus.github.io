@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ImageGallery from 'react-image-gallery'
+// import ImageGallery from 'react-image-gallery'
 
 import TeamMember from './components/TeamMember'
 
@@ -15,26 +15,29 @@ import Paul from './assets/Paul.jpg'
 import Romica from './assets/Romica.jpg'
 import Valentin from './assets/Valentin.jpg'
 
-import Bucharest from './assets/Bucharest.jpg'
-import Noordwijk from './assets/Noordwijk.jpg'
-import Kiruna from './assets/Kiruna.jpg'
+import Lab from './assets/Lab.png'
+import Campus from './assets/Campus.jpg'
+
+// import Bucharest from './assets/Bucharest.jpg'
+// import Noordwijk from './assets/Noordwijk.jpg'
+// import Kiruna from './assets/Kiruna.jpg'
 
 import './index.scss'
 
-const images = [
-  {
-    original: Bucharest,
-    description: 'Bucharest, Romania 🇷🇴'
-  },
-  {
-    original: Kiruna,
-    description: 'Kiruna, Sweden 🇸🇪'
-  },
-  {
-    original: Noordwijk,
-    description: 'Noordwijk, Netherlands, ESTEC Centre 🇳🇱'
-  },
-]
+// const images = [
+//   {
+//     original: Bucharest,
+//     description: 'Bucharest, Romania 🇷🇴'
+//   },
+//   {
+//     original: Kiruna,
+//     description: 'Kiruna, Sweden 🇸🇪'
+//   },
+//   {
+//     original: Noordwijk,
+//     description: 'Noordwijk, Netherlands, ESTEC Centre 🇳🇱'
+//   },
+// ]
 
 export default class Team extends React.Component {
   public render() {
@@ -52,12 +55,24 @@ export default class Team extends React.Component {
           <TeamMember fullName='Paul Paraschiv' image={Paul} role='Verification & Testing' />
           <TeamMember fullName='Valentin Mocanu' image={Valentin} role='Electronics' />
         </div>
-        <ImageGallery
+        <p className='CampusDescription'>
+          Our experiment is hosted by the Center for Advanced Research on New
+          Materials, Products and Innovative Processes (CAMPUS), the UPB's
+          advanced research & development center for multi - and inter - disciplinary technologies.
+        </p>
+
+        <div className='Row'>
+          <img className='Campus' src={Campus} alt='' />
+          <img className='Campus' src={Lab} alt='' />
+        </div>
+
+        {/* <ImageGallery
           items={images}
           showThumbnails={false}
           showFullscreenButton={false}
           showPlayButton={false}
-          showBullets />
+          showBullets
+        /> */}
       </div >
     )
   }
