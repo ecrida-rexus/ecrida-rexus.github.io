@@ -2,6 +2,7 @@
   "name": "ecrida",
   "version": "0.1.0",
   "private": false,
+  "license": "MIT",
   "homepage": "https://ecrida-rexus.github.io/",
   "author": "Mihai Predoiu <predoiumihai@gmail.com>",
   "dependencies": {
