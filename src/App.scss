@@ -4,27 +4,6 @@
   background-color: #e3e3e3;
 }
 
-.Modal {
-  position: absolute;
-  top: 0;
-  left: 140px;
-  right: 140px;
-  bottom: 0px;
-  background-color: #e3e3e3;
-  outline: none;
-  overflow: scroll;
-  overflow-x: hidden;
-}
-
-.Overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 80%;
-}
-
 /* Scrollbars */
 
 ::-webkit-scrollbar {
