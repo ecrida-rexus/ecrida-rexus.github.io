@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .Logo {
@@ -20,10 +21,6 @@
 
 @media only screen and (max-width: 1050px) {
   .Partners {
-    .Row {
-      flex-wrap: wrap;
-    }
-
     .Logo {
       max-width: 42vw;
       max-height: 70px;

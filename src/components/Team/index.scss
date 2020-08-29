@@ -20,41 +20,6 @@
 
     object-fit: cover;
   }
-
-  .image-gallery-description {
-    right: 0;
-    bottom: auto;
-    left: auto;
-    top: 8px;
-  }
-
-  .image-gallery,
-  .image-gallery-slides,
-  .image-gallery-slide img {
-    width: 600px;
-
-    object-fit: cover;
-    margin: 0 auto;
-
-    outline: none;
-
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(black, 0.1);
-  }
-
-  .image-gallery-left-nav,
-  .image-gallery-right-nav {
-    opacity: 0.5;
-  }
-
-  .image-gallery-left-nav:hover,
-  .image-gallery-right-nav:hover {
-    opacity: 100%;
-  }
-
-  .image-gallery-bullet {
-    box-shadow: none;
-  }
 }
 
 @media only screen and (max-width: 1050px) {
@@ -71,20 +36,6 @@
 
     .CampusDescription {
       width: 80%;
-    }
-
-    .image-gallery,
-    .image-gallery-slides,
-    .image-gallery-slide img {
-      width: 320px;
-      height: auto;
-
-      object-fit: cover;
-
-      outline: none;
-
-      border-radius: 5px;
-      box-shadow: 0 5px 15px rgba(black, 0.1);
     }
   }
 }
