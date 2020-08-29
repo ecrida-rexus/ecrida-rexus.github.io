@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb5c7dbb.chunk.css",
-    "main.js": "/static/js/main.659bf7f3.chunk.js",
-    "main.js.map": "/static/js/main.659bf7f3.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.fca6e774.js",
-    "runtime-main.js.map": "/static/js/runtime-main.fca6e774.js.map",
-    "static/css/2.a641e29a.chunk.css": "/static/css/2.a641e29a.chunk.css",
-    "static/js/2.901acf6e.chunk.js": "/static/js/2.901acf6e.chunk.js",
-    "static/js/2.901acf6e.chunk.js.map": "/static/js/2.901acf6e.chunk.js.map",
+    "main.css": "/static/css/main.02e162ad.chunk.css",
+    "main.js": "/static/js/main.c950da9b.chunk.js",
+    "main.js.map": "/static/js/main.c950da9b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.90cd7dd1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.90cd7dd1.js.map",
+    "static/css/2.f681e662.chunk.css": "/static/css/2.f681e662.chunk.css",
+    "static/js/2.035fc545.chunk.js": "/static/js/2.035fc545.chunk.js",
+    "static/js/2.035fc545.chunk.js.map": "/static/js/2.035fc545.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4ca9ed316dc1f5e87eb8e33bde1e5850.js": "/precache-manifest.4ca9ed316dc1f5e87eb8e33bde1e5850.js",
+    "precache-manifest.a2ebd7423ad4c9cb162087080f1be4c5.js": "/precache-manifest.a2ebd7423ad4c9cb162087080f1be4c5.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.a641e29a.chunk.css.map": "/static/css/2.a641e29a.chunk.css.map",
-    "static/css/main.fb5c7dbb.chunk.css.map": "/static/css/main.fb5c7dbb.chunk.css.map",
-    "static/js/2.901acf6e.chunk.js.LICENSE.txt": "/static/js/2.901acf6e.chunk.js.LICENSE.txt",
+    "static/css/2.f681e662.chunk.css.map": "/static/css/2.f681e662.chunk.css.map",
+    "static/css/main.02e162ad.chunk.css.map": "/static/css/main.02e162ad.chunk.css.map",
+    "static/js/2.035fc545.chunk.js.LICENSE.txt": "/static/js/2.035fc545.chunk.js.LICENSE.txt",
     "static/media/ACS.png": "/static/media/ACS.daffe6bc.png",
     "static/media/Adrian.jpg": "/static/media/Adrian.10a36e9c.jpg",
     "static/media/Campus.jpg": "/static/media/Campus.ed9190d1.jpg",
@@ -47,10 +47,10 @@
     "static/media/techlounge.png": "/static/media/techlounge.95d7b69c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fca6e774.js",
-    "static/css/2.a641e29a.chunk.css",
-    "static/js/2.901acf6e.chunk.js",
-    "static/css/main.fb5c7dbb.chunk.css",
-    "static/js/main.659bf7f3.chunk.js"
+    "static/js/runtime-main.90cd7dd1.js",
+    "static/css/2.f681e662.chunk.css",
+    "static/js/2.035fc545.chunk.js",
+    "static/css/main.02e162ad.chunk.css",
+    "static/js/main.c950da9b.chunk.js"
   ]
 }
