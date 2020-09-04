@@ -5,10 +5,10 @@ import { Link } from 'react-scroll'
 // import SideMenu from '../SideMenu'
 
 import Logo from './assets/Logo.svg'
-import Facebook from './assets/Facebook.svg'
-import Instagram from './assets/Instagram.svg'
-import Linkedin from './assets/Linkedin.svg'
-import OpenButton from './assets/OpenButton.svg'
+// import Facebook from './assets/Facebook.svg'
+// import Instagram from './assets/Instagram.svg'
+// import Linkedin from './assets/Linkedin.svg'
+// import OpenButton from './assets/OpenButton.svg'
 
 import './index.scss'
 
@@ -35,11 +35,9 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
   public render() {
     return (
       <div className={`Header ${this.state.isExpanded ? 'expanded' : ''}`} >
-        <div className='Ecrida'>
-          <Link offset={-80} to='introduction' smooth={true} duration={500}>
-            <img src={Logo} className='Logo' alt='Project ECRIDA Logo' />
-          </Link>
-        </div>
+        <Link offset={-80} to='introduction' smooth={true} duration={500}>
+          <img src={Logo} className='Logo' alt='Project ECRIDA Logo' />
+        </Link>
         <div className='SectionLinks'>
           <Link offset={-80} to='team' smooth={true} duration={500} onClick={this.onMenuCollapse}>
             <p>Team</p>
@@ -47,29 +45,14 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
           <Link offset={-80} to='experiment' smooth={true} duration={500} onClick={this.onMenuCollapse}>
             <p>Experiment</p>
           </Link>
-          <Link offset={-80} to='timeline' smooth={true} duration={500} onClick={this.onMenuCollapse}>
-            <p>Timeline</p>
+          <Link offset={-80} to='activity' smooth={true} duration={500} onClick={this.onMenuCollapse}>
+            <p>Activity</p>
           </Link>
           <Link offset={-80} to='partners' smooth={true} duration={500} onClick={this.onMenuCollapse}>
             <p>Sponsors and Partners</p>
           </Link>
         </div>
-        <div className='Controls'>
-          <div className='Contact'>
-            <div className='SocialMediaLogos'>
-              <a href='https://www.facebook.com/projectecrida' target='_blank' rel='noopener noreferrer nofollow'>
-                <img src={Facebook} className='SocialMediaIcon' alt='' />
-              </a>
-              <a href='https://www.instagram.com/projectecrida/' target='_blank' rel='noopener noreferrer nofollow'>
-                <img src={Instagram} className='SocialMediaIcon' alt='' />
-              </a>
-              <a href='https://www.linkedin.com/company/ecrida-rexus-program/about/' target='_blank' rel='noopener noreferrer nofollow'>
-                <img src={Linkedin} className='SocialMediaIcon' alt='' />
-              </a>
-
-            </div>
-            <p>ecrida.rexus@gmail.com</p>
-          </div>
+        {/* <div className='Controls'>
           <div className='MenuButtonContainer'>
             <img
               className='MenuButton'
@@ -78,7 +61,7 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
               onClick={this.onMenuExpand}
             />
           </div>
-        </div>
+        </div> */}
       </div >
     )
   }

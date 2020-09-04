@@ -1,12 +1,14 @@
 .Section {
-  padding: 0 140px 20px 140px;
+  padding: 0 230px 20px 230px;
   box-sizing: border-box;
-  border-bottom: 3px solid lightgray;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 
   h1 {
-    font-weight: 400;
-    font-size: 50px;
+    font-size: 45px;
+    font-weight: 500;
     margin: 20px 0;
+
+    color: #151922;
   }
 }
 

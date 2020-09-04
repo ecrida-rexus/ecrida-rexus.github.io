@@ -6,11 +6,10 @@
   top: 0;
 
   display: flex;
-  flex-grow: 1;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 
-  padding: 0 140px;
+  padding: 0 250px;
   box-sizing: border-box;
 
   background-color: black;
@@ -18,95 +17,112 @@
 
   z-index: 100;
 
-  .Logo {
-    height: 100%;
+  a,
+  img {
+    height: 95%;
+
     align-self: center;
-  }
-
-  .Ecrida,
-  .SectionLinks,
-  .SocialMediaLogos,
-  .MenuButtonContainer {
-    height: 80px;
-    width: fit-content;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .SectionLinks {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-
-    a {
-      margin: 10px 0;
-    }
-  }
-
-  .Contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    align-self: center;
-    height: 100%;
-
-    p {
-      font-size: 17px;
-      font-weight: 400;
-    }
-  }
-
-  .SocialMediaLogos,
-  .MenuButtonContainer {
-    height: fit-content;
-
-    a {
-      height: 45px;
-      width: 45px;
-    }
-  }
-
-  .MenuButtonContainer {
-    align-self: flex-start;
-  }
-
-  p {
-    height: fit-content;
-    margin: 0 10px;
-    color: white;
-    font-weight: 500;
-  }
-
-  a {
-    height: 80%;
-    width: fit-content;
-
     cursor: pointer;
-
-    display: flex;
-    align-items: center;
-
-    .SocialMediaIcon {
-      height: 70%;
-    }
-  }
-
-  .MenuButton {
-    height: 50%;
-    display: none;
   }
 
   .SectionLinks {
+    display: flex;
+    color: white;
+
     a {
-      margin: 0 10px;
+      margin: 0 25px;
+      font-weight: 500;
+
+      &:hover {
+        opacity: 0.75;
+      }
     }
   }
+
+  // .Ecrida,
+  // .SectionLinks,
+  // .SocialMediaLogos,
+  // .MenuButtonContainer {
+  //   height: 80px;
+  //   width: fit-content;
+
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
+
+  // .SectionLinks {
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   margin-left: auto;
+  //   margin-right: auto;
+
+  //   a {
+  //     margin: 10px 0;
+  //   }
+  // }
+
+  // .Contact {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: space-evenly;
+  //   align-self: center;
+  //   height: 100%;
+
+  //   p {
+  //     font-size: 17px;
+  //     font-weight: 400;
+  //   }
+  // }
+
+  // .SocialMediaLogos,
+  // .MenuButtonContainer {
+  //   height: fit-content;
+
+  //   a {
+  //     height: 45px;
+  //     width: 45px;
+  //   }
+  // }
+
+  // .MenuButtonContainer {
+  //   align-self: flex-start;
+  // }
+
+  // p {
+  //   height: fit-content;
+  //   margin: 0 10px;
+  //   color: white;
+  //   font-weight: 500;
+  // }
+
+  // a {
+  //   height: 80%;
+  //   width: fit-content;
+
+  //   cursor: pointer;
+
+  //   display: flex;
+  //   align-items: center;
+
+  //   .SocialMediaIcon {
+  //     height: 70%;
+  //   }
+  // }
+
+  // .MenuButton {
+  //   height: 50%;
+  //   display: none;
+  // }
+
+  // .SectionLinks {
+  //   a {
+  //     margin: 0 10px;
+  //   }
+  // }
 }
 
 @media only screen and (max-width: 1050px) {
