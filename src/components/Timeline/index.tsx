@@ -1,10 +1,6 @@
 import React from 'react'
 
-// import { getTimeline } from '../../services/Timeline'
 import { TimelineResponse } from '../../services/Timeline/types'
-
-// import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
-import 'react-vertical-timeline-component/style.min.css'
 
 import Button from '../Button'
 
