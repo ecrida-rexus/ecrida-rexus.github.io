@@ -1,0 +1,29 @@
+.RexusBexusBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 520px;
+  width: 100%;
+  padding: 60px;
+  box-sizing: border-box;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('./assets/launch.jpg');
+  background-size: cover;
+
+  img {
+    height: 145px;
+    width: 145px;
+  }
+
+  h1 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.4;
+  }
+}

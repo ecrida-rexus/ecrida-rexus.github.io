@@ -4,6 +4,7 @@ import { Element } from 'react-scroll'
 
 import Header from './components/Header'
 import Introduction from './components/Introduction'
+import RexusBexusBanner from './components/RexusBexusBanner'
 import Section from './components/Section'
 import Team from './components/Team'
 import Partners from './components/Partners'
@@ -20,18 +21,19 @@ export default function App() {
       <Element name='introduction'>
         <Introduction />
       </Element>
+      <RexusBexusBanner />
       <Element name='team'>
         <Section headline='Meet our team'>
           <Team />
         </Section>
       </Element>
       <Element name='experiment'>
-        <Section headline='Experiment'>
+        <Section headline=''>
           <Experiment />
         </Section>
       </Element>
-      <Element name='timeline'>
-        <Section headline='Timeline'>
+      <Element name='activity'>
+        <Section>
           <Timeline />
         </Section>
       </Element>
