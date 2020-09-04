@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { getTimeline } from '../../services/Timeline'
+// import { getTimeline } from '../../services/Timeline'
 import { TimelineResponse } from '../../services/Timeline/types'
 
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
+// import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 
 import Button from '../Button'
@@ -18,40 +18,36 @@ export interface ITimelineState {
 }
 
 export default class Timeline extends React.Component {
-  state: ITimelineState = {
-    content: []
-  }
-
-  async componentDidMount() {
-    const fetchedContent = await getTimeline()
-
-    this.setState({ content: fetchedContent })
-  }
-
-  get elements() {
-    return this.state.content.map(item => (
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work element"
-        iconStyle={{ background: '#002B7F', color: '#fff' }}
-      >
-        {'img' in item ? <img src={item.img} alt='' /> : null}
-        {'video' in item ? <video src={item.video} autoPlay muted loop /> : null}
-        <h4>{item.date}</h4>
-        <p>{item.text}</p>
-        <div className='Footer'>
-          {'url' in item ? <Button text={item.buttonText} url={item.url} /> : null}
-        </div>
-      </VerticalTimelineElement>
-    ))
-  }
 
   public render() {
     return (
       <div className='Timeline'>
-        <VerticalTimeline>
-          {this.elements}
-        </VerticalTimeline>
+        <div className='Row'>
+          <div className='Title'>
+            <h1>Latest Facebook activity</h1>
+            <Button text='Visit our Facebook page'></Button>
+          </div>
+          <div
+            className="fb-post"
+            data-href="https://www.facebook.com/projectecrida/posts/350680929678735"
+            data-show-text="true"
+            data-width="">
+            <blockquote
+              cite="https://www.facebook.com/projectecrida/posts/350680929678735"
+              className="fb-xfbml-parse-ignore">
+              <p>[RO] Săptămâna trecută, în cadrul IPR - Integration Progress Review, am avut plăcerea să o avem în laboratorul nostru pe...</p>
+              Posted by
+              <a href="https://www.facebook.com/projectecrida/">
+                REXUS - Project Ecrida
+              </a>
+              on
+              <a href="https://www.facebook.com/projectecrida/posts/350680929678735">
+                Wednesday, August 26, 2020
+              </a>
+            </blockquote>
+          </div>
+        </div>
       </div >
     )
   }
-}
+} 

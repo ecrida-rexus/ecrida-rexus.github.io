@@ -1,65 +1,12 @@
 .Timeline {
-  background-color: #e3e3e3;
-}
-
-.element {
-  text-align: left;
-
-  img,
-  video {
-    width: 100%;
-    max-height: 150px;
-    object-fit: cover;
-    border-radius: 0.25em;
-  }
-
-  p {
-    margin: 0.25em 1em;
-  }
-
-  .Footer {
+  .Row {
     display: flex;
-    flex-direction: row-reverse;
-    margin: 0 1em;
+    justify-content: space-evenly;
   }
 
-  h4 {
-    margin: 15px 1em 0 1em;
-    font-weight: 100;
-  }
-
-  .vertical-timeline-element-content {
-    padding: 0 0 1em 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-}
-
-@media only screen and (max-width: 1169px) {
-  .element {
-    .vertical-timeline-element-content {
-      padding: 0;
-    }
-  }
-
-  .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
-    visibility: visible;
-    animation: timeline-slide 0.6s;
-  }
-}
-
-@keyframes timeline-slide {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-
-  60% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+  .Title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

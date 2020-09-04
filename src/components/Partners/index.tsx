@@ -73,6 +73,14 @@ export default class Partners extends React.Component {
             <img src={FIMM} className='Logo' alt=''></img>
           </a>
         </div>
+        {/* <iframe
+          title='3DModel'
+          name="sayduck3dViewer"
+          style={{ height: '600px', width: '1000px' }}
+          src="https://sayduck.com/3d/8St3?background-color=studio&starting-variant=861ac61d-91ff-4093-9d79-1b5ccdd82e7c&"
+          frameBorder="0"
+        >
+        </iframe> */}
       </div >
     )
   }

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Button from '../Button'
+
 import TeamMember from './components/TeamMember'
 
 import Radu from './assets/Radu.jpg'
@@ -34,15 +36,22 @@ export default class Team extends React.Component {
           <TeamMember fullName='Paul Paraschiv' image={Paul} role='Verification & Testing' />
           <TeamMember fullName='Valentin Mocanu' image={Valentin} role='Electronics' />
         </div>
-        <p className='CampusDescription'>
-          Our experiment is hosted by the Center for Advanced Research on New
-          Materials, Products and Innovative Processes (<span><a href='http://www.campus.upb.ro/website/' target=' _blank' rel='noopener noreferrer nofollow'>CAMPUS</a></span>), the UPB's
-          advanced research & development center for multi - and inter - disciplinary technologies.
-        </p>
-
-        <div className='Row'>
-          <img className='Campus' src={Campus} alt='' />
-          <img className='Campus' src={Lab} alt='' />
+        <div className='LaboratoryContainer'>
+          <div className='Column'>
+            <h1>Our Laboratory</h1>
+            <p>
+              Our experiment is hosted by the Center for Advanced Research on New
+              Materials, Products and Innovative Processes (CAMPUS), the UPB's
+              advanced research & development center for multi - and inter - disciplinary technologies.
+            </p>
+            <a href='http://www.campus.upb.ro/website/' target=' _blank' rel='noopener noreferrer nofollow'>
+              <Button text='CAMPUS Website' />
+            </a>
+          </div>
+          <div className='Column'>
+            <img src={Campus} alt='' />
+            <img src={Lab} alt='' />
+          </div>
         </div>
       </div >
     )
