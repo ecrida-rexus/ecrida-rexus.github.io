@@ -1,6 +1,46 @@
+.ExperimentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img {
+    width: 600px;
+    padding: 5px;
+  }
+
+  .Description {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-left: 100px;
+    max-width: 500px;
+
+    h1 {
+      font-size: 45px;
+      color: #151922;
+      text-align: start;
+      font-weight: 500;
+    }
+
+    p {
+      text-align: start;
+      font-size: 16px;
+      font-weight: 400;
+      color: #151922;
+      opacity: 95%;
+      margin: 5px 0;
+      line-height: 1.4;
+    }
+  }
+}
+
 .Experiment {
   text-align: left;
   padding: 0 15%;
+  margin: 0 31px;
+  height: 100%;
+  overflow: auto;
 
   .Row {
     display: flex;
@@ -40,6 +80,12 @@
     margin-bottom: 6px;
     font-weight: 500;
   }
+}
+
+.rodal-dialog {
+  height: calc(100vh - 160px);
+  width: 65vw;
+  top: 90px;
 }
 
 @media only screen and (max-width: 1050px) {

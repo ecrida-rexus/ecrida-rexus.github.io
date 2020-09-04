@@ -1,20 +1,26 @@
 import React from 'react'
 
+import Rodal from 'rodal'
+import 'rodal/lib/rodal.css';
+
+import Button from '../Button'
+
 import { getExperiment } from '../../services/Experiment'
 import { ExperimentResponse } from '../../services/Experiment/types'
 
-import './index.scss'
+import MainFigure from './assets/MainFigure.svg'
 
-export interface IExperimentProps {
-}
+import './index.scss'
 
 export interface IExperimentState {
   content: ExperimentResponse
+  isRodalOpen: boolean
 }
 
-export default class Experiment extends React.Component<IExperimentProps, IExperimentState> {
+export default class Experiment extends React.Component<{}, IExperimentState> {
   state: IExperimentState = {
-    content: []
+    content: [],
+    isRodalOpen: false
   }
 
   async componentDidMount() {
@@ -52,12 +58,31 @@ export default class Experiment extends React.Component<IExperimentProps, IExper
     })
   }
 
+  openRodal = () => this.setState({ isRodalOpen: true })
+  closeRodal = () => this.setState({ isRodalOpen: false })
+
   public render() {
 
     return (
-      <div className='Experiment'>
-        {this.content}
-      </div >
+      <>
+        <div className='ExperimentContainer'>
+          <img src={MainFigure} alt='' />
+          <div className='Description' >
+            <h1>Our Experiment</h1>
+            <p>The main goal of the ECRIDA experiment is to design and test a DLP-like printer for manufacturing 3D objects on-board of the REXUS 29 rocket.</p>
+            <p>The schematic diagram describes the experimental set-up, which consists of 3 major assemblies.</p>
+            <Button onClick={this.openRodal} text='Learn More' />
+          </div>
+
+        </div >
+
+        <Rodal visible={this.state.isRodalOpen} onClose={this.closeRodal} height='auto' width='auto'>
+          <div className='Experiment' >
+            {this.content}
+
+          </div>
+        </Rodal>
+      </>
     )
   }
 }
