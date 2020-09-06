@@ -74,14 +74,13 @@ export default class Experiment extends React.Component<{}, IExperimentState> {
             <Button onClick={this.openRodal} text='Learn More' />
           </div>
 
+          <Rodal visible={this.state.isRodalOpen} onClose={this.closeRodal} height='auto' width='auto'>
+            <div className='Experiment' >
+              {this.content}
+            </div>
+          </Rodal>
         </div >
 
-        <Rodal visible={this.state.isRodalOpen} onClose={this.closeRodal} height='auto' width='auto'>
-          <div className='Experiment' >
-            {this.content}
-
-          </div>
-        </Rodal>
       </>
     )
   }

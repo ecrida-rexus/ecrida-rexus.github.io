@@ -1,0 +1,96 @@
+.Tier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 480px;
+  width: 45%;
+  min-width: 300px;
+
+  padding: 5px 15px 15px 15px;
+  margin: 5px;
+  box-sizing: border-box;
+
+  border-radius: 7px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  background: white;
+
+  ul {
+    width: 100%;
+    box-sizing: border-box;
+    list-style-type: '🚀';
+    padding: 0 0 0 25px;
+  }
+
+  h4 {
+    margin: 0 0 auto 0;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  h3 {
+    margin: auto;
+    flex-flow: 1;
+    font-weight: 400;
+    color: #3c5a95;
+    cursor: pointer;
+  }
+
+  h2,
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    opacity: 0.9;
+    margin: 5px;
+  }
+
+  h2 {
+    min-height: 40px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 10px 0 10px 10px;
+    line-height: 1.3;
+    opacity: 1;
+  }
+}
+
+.Donate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  img {
+    margin-top: 10px;
+    width: 85px;
+  }
+}
+
+.TierTitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+  padding: 5px 15px;
+  border-radius: 7px 7px 0 0;
+
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .Tier {
+    min-width: 100%;
+  }
+
+  .TierTitle {
+    padding: 0;
+  }
+}

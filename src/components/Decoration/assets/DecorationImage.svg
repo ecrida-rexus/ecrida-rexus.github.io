@@ -1,0 +1,19 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg" width="1921.66" height="116.67" opacity=".7"
+>
+	<path d="M1921.44.06l.06 116.1-1919.16-.9z" fill="#ce1126"/>
+	<path d="M639.87 54.13l743.9 62.23-806.54-.33z" fill="#fcd116" opacity="1"/>
+	<g fill="#fff">
+		<path d="M1250.8 41.45L1921.66.42l-538.7 115.52z" opacity=".2"/>
+		<path d="M1921.55 0l-.16 110.7-294.76-92.86z" opacity=".33"/>
+	</g>
+	<path d="M1921.32.35l.01 115.7-538.8-.97z" fill="#ce1126" opacity=".48"/>
+	<path d="M0 116V1.56l640 52.58L577.26 116z" fill="#002b7f"/>
+	<g fill="#fff">
+		<path d="M.3 3.2l200.36 113.47H58.37z" opacity=".2"/>
+		<path d="M402.53 34.6L577.27 116 0 115.92z" opacity=".1"/>
+		<path d="M690.9 58.75h0L1042.26 88l-182.73 28.17z" opacity=".3"/>
+		<path d="M891.04 75.05L808.98 116H577.3z" opacity=".18"/>
+	</g>
+	<path d="M639.64 31.33l161.9 34.8-186.4 28.46z" fill="#fcd116" opacity="0"/>
+</svg>

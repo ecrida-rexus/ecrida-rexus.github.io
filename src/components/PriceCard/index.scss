@@ -1,0 +1,74 @@
+.PriceCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100px;
+  width: 375px;
+  padding: 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+
+  border-radius: 5px;
+  border: 3px solid #e3e3e3;
+  cursor: pointer;
+
+  transition: all 0.3s;
+
+  &:hover,
+  &.selected {
+    background: rgb(246, 246, 246);
+  }
+
+  &.selected {
+    box-shadow: 0 0px 7px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.6;
+  }
+
+  .RightSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    border: 2px solid #e3e3e3;
+    border-radius: 4px;
+
+    .icon {
+      height: 22px;
+      width: 22px;
+      fill: #3c5a95;
+
+      transform: scale(0);
+      transition: all 0.1s;
+
+      &.selected {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .PriceCard {
+    height: 75px;
+    width: 90vw;
+  }
+}

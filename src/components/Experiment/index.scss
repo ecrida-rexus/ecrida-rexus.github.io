@@ -33,11 +33,17 @@
       line-height: 1.4;
     }
   }
+
+  .rodal-dialog {
+    height: calc(100vh - 160px);
+    width: 50vw;
+    top: 90px;
+  }
 }
 
 .Experiment {
   text-align: left;
-  padding: 0 15%;
+  padding: 0 30px;
   margin: 0 31px;
   height: 100%;
   overflow: auto;
@@ -80,12 +86,6 @@
     margin-bottom: 6px;
     font-weight: 500;
   }
-}
-
-.rodal-dialog {
-  height: calc(100vh - 160px);
-  width: 65vw;
-  top: 90px;
 }
 
 @media only screen and (max-width: 1050px) {
