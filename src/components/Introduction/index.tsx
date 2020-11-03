@@ -38,7 +38,7 @@ export default class Introduction extends React.Component {
             </p>
             <p>
               Our experiment will be launched on-board the RX29 Rocket
-              from the Polar Circle, Sweden in March 2021.
+              from the Polar Circle, Sweden in March 2022.
             </p>
           </div>
           <div className='SecondPresentation'>
@@ -49,7 +49,7 @@ export default class Introduction extends React.Component {
               <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" style={{ height: '55px' }} />
               <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
             </form>
-            <Countdown date={'2021-03-20T12:00:00'} />
+            <Countdown date={'2022-03-20T12:00:00'} />
           </div>
         </div>
         <img src={Decoration} className='Decoration' alt='' />
