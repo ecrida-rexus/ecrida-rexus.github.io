@@ -1,13 +1,11 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
-
 import Countdown from 'components/Countdown'
-import Button from 'components/Button'
-
-import Decoration from './assets/Decoration.svg'
+import Decoration from 'components/Decoration'
 
 import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa'
+
+import DonateButton from './assets/donate.gif'
 
 import './index.scss'
 
@@ -46,15 +44,32 @@ export default class Introduction extends React.Component {
               </a>
             </div>
           </div>
-          <div className='SecondPresentation'>
-            <p><span role='img' aria-label='RomanianFlag'>🇷🇴</span> ECRIDA are nevoie de ajutorul tău!</p>
+          <div className='Announcements'>
+            {/* <p><span role='img' aria-label='RomanianFlag'>[🇷🇴]</span> ECRIDA are nevoie de ajutorul tău!</p>
             <Link to='/crowdfunding'>
               <Button text='Află mai multe' />
-            </Link>
+            </Link> */}
+            <div className='PaypalCard'>
+              <p>Support our project via PayPal</p>
+              <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
+                <input type='hidden' name='cmd' value='_s-xclick' />
+                <input type='hidden' name='hosted_button_id' value='GHFQY9CWZVQ8W' />
+                <input
+                  type='image'
+                  src={DonateButton}
+                  name='submit'
+                  title='PayPal - The safer, easier way to pay online!'
+                  alt=''
+                  style={{ height: '50px' }}
+                  formTarget='blank'
+                />
+              </form>
+            </div>
+
             <Countdown date={'2021-03-20T12:00:00'} />
           </div>
         </div>
-        <img src={Decoration} className='Decoration' alt='' />
+        <Decoration />
       </div >
     )
   }

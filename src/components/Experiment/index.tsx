@@ -58,8 +58,15 @@ export default class Experiment extends React.Component<{}, IExperimentState> {
     })
   }
 
-  openRodal = () => this.setState({ isRodalOpen: true })
-  closeRodal = () => this.setState({ isRodalOpen: false })
+  openRodal = () => {
+    this.setState({ isRodalOpen: true })
+    document.body.style.overflow = 'hidden'
+  }
+
+  closeRodal = () => {
+    this.setState({ isRodalOpen: false })
+    document.body.style.overflow = 'auto'
+  }
 
   public render() {
 

@@ -27,3 +27,19 @@
     line-height: 1.4;
   }
 }
+
+@media only screen and (max-width: 1050px) {
+  .RexusBexusBanner {
+    padding: 15px;
+    height: 340px;
+
+    img {
+      height: 100px;
+      width: 100px;
+    }
+
+    h1 {
+      font-size: 14px;
+    }
+  }
+}

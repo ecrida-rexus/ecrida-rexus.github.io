@@ -10,7 +10,7 @@ export interface ISectionProps {
 export default function Section(props: React.PropsWithChildren<ISectionProps>) {
   return (
     <div className='Section'>
-      <h1>{props.headline}</h1>
+      {props.headline ? <h1>{props.headline}</h1> : null}
       {props.children}
     </div >
   )

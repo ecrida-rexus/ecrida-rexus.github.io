@@ -1,6 +1,7 @@
 .Header {
   height: 80px;
   width: 100%;
+  z-index: 200;
 
   position: fixed;
   top: 0;
@@ -15,8 +16,6 @@
   background-color: black;
   box-shadow: 0px 1px 5px #27272780;
 
-  z-index: 100;
-
   a,
   img {
     height: 95%;
@@ -27,102 +26,24 @@
 
   .SectionLinks {
     display: flex;
-    color: white;
 
-    a {
-      margin: 0 25px;
+    a,
+    p {
+      margin: 0;
       font-weight: 500;
+      color: white;
+      text-decoration: none;
+      border-radius: 3px;
 
       &:hover {
-        opacity: 0.75;
+        background: rgba(255, 255, 255, 0.15);
       }
     }
+
+    p {
+      padding: 12px 26px;
+    }
   }
-
-  // .Ecrida,
-  // .SectionLinks,
-  // .SocialMediaLogos,
-  // .MenuButtonContainer {
-  //   height: 80px;
-  //   width: fit-content;
-
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  //   align-items: center;
-  // }
-
-  // .SectionLinks {
-  //   position: absolute;
-  //   left: 0;
-  //   right: 0;
-  //   margin-left: auto;
-  //   margin-right: auto;
-
-  //   a {
-  //     margin: 10px 0;
-  //   }
-  // }
-
-  // .Contact {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: space-evenly;
-  //   align-self: center;
-  //   height: 100%;
-
-  //   p {
-  //     font-size: 17px;
-  //     font-weight: 400;
-  //   }
-  // }
-
-  // .SocialMediaLogos,
-  // .MenuButtonContainer {
-  //   height: fit-content;
-
-  //   a {
-  //     height: 45px;
-  //     width: 45px;
-  //   }
-  // }
-
-  // .MenuButtonContainer {
-  //   align-self: flex-start;
-  // }
-
-  // p {
-  //   height: fit-content;
-  //   margin: 0 10px;
-  //   color: white;
-  //   font-weight: 500;
-  // }
-
-  // a {
-  //   height: 80%;
-  //   width: fit-content;
-
-  //   cursor: pointer;
-
-  //   display: flex;
-  //   align-items: center;
-
-  //   .SocialMediaIcon {
-  //     height: 70%;
-  //   }
-  // }
-
-  // .MenuButton {
-  //   height: 50%;
-  //   display: none;
-  // }
-
-  // .SectionLinks {
-  //   a {
-  //     margin: 0 10px;
-  //   }
-  // }
 }
 
 @media only screen and (max-width: 1050px) {
@@ -133,88 +54,19 @@
     transition: all 0.2s linear;
 
     .SectionLinks {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .SectionLinks {
-      display: none;
-    }
-
-    .Ecrida,
-    .SocialMediaLogos,
-    .MenuButtonContainer,
-    .SectionLinks {
-      height: 60px;
-    }
-
-    .Controls {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-
-    .Contact {
-      height: 60px;
-      align-self: flex-start;
+      height: 100%;
+      a {
+        height: fit-content;
+      }
 
       p {
-        font-size: 14px;
-        margin-bottom: 8px;
-      }
-    }
+        font-size: 12px;
+        padding: 6px 12px;
+        width: fit-content;
 
-    .MenuButton {
-      display: flex;
-    }
-
-    .MenuButton {
-      background-position: center;
-      transition: background 0.3s;
-    }
-    .MenuButton:hover {
-      background: transparent
-        radial-gradient(circle, transparent 1%, transparent 1%) center/15000%;
-    }
-    .MenuButton:active {
-      background-color: rgba(255, 255, 255, 0.3);
-      background-size: 100%;
-      transition: background 0s;
-    }
-
-    &.expanded {
-      height: 200px;
-      transition: all 0.2s linear;
-
-      .SectionLinks {
-        display: flex;
-        flex-direction: column;
-        transition: all 0.4s ease-in;
-        margin-top: 60px;
-        animation: mymove 0.4s;
-
-        @keyframes mymove {
-          from {
-            top: -60px;
-            opacity: 0%;
-          }
-          to {
-            top: 0px;
-            opacity: 100%;
-          }
+        &:active {
+          background: rgba(255, 255, 255, 0.15);
         }
-
-        p {
-          margin-top: 10px;
-          font-size: 18px;
-        }
-      }
-
-      .MenuButton {
-        animation: pulse 0.2s;
       }
     }
   }

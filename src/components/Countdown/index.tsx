@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 
+import launch from './assets/launch.mp4'
+
+import './index.scss'
+
 interface ICountdownProps {
   date: string
 }
@@ -81,35 +85,39 @@ class Countdown extends Component<ICountdownProps> {
 
     return (
       <div className="Countdown">
-        <span className="Countdown-col">
-          <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.days)}</strong>
-            <span>{countDown.days === 1 ? 'Day' : 'Days'}</span>
+        <div className='CountdownText'>
+          <span className="Countdown-col">
+            <span className="Countdown-col-element">
+              <h1>{this.addLeadingZeros(countDown.days)}</h1>
+              <span>{countDown.days === 1 ? 'Day' : 'Days'}</span>
+            </span>
           </span>
-        </span>
 
-        <span className="Countdown-col">
-          <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.hours)}</strong>
-            <span>Hours</span>
+          <span className="Countdown-col">
+            <span className="Countdown-col-element">
+              <h1>{this.addLeadingZeros(countDown.hours)}</h1>
+              <span>Hours</span>
+            </span>
           </span>
-        </span>
 
 
-        <span className="Countdown-col">
-          <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.min)}</strong>
-            <span>Min</span>
+          <span className="Countdown-col">
+            <span className="Countdown-col-element">
+              <h1>{this.addLeadingZeros(countDown.min)}</h1>
+              <span>Min</span>
+            </span>
           </span>
-        </span>
 
-        <span className="Countdown-col">
-          <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.sec)}</strong>
-            <span>Sec</span>
+          <span className="Countdown-col">
+            <span className="Countdown-col-element">
+              <h1>{this.addLeadingZeros(countDown.sec)}</h1>
+              <span>Sec</span>
+            </span>
           </span>
-        </span>
-        <h2>until launch <span role="img" aria-label="rocket">🚀</span></h2>
+          <h2>until launch <span role="img" aria-label="rocket">🚀</span></h2>
+        </div>
+        <video src={launch} autoPlay muted loop />
+        <div className='Overlay' />
       </div>
     )
   }

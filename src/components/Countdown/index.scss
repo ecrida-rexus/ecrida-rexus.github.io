@@ -1,0 +1,95 @@
+.Countdown {
+  margin-top: 40px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  height: fit-content;
+  width: fit-content;
+
+  position: relative;
+
+  h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin: 20px 0 0 0;
+  }
+
+  span {
+    font-size: 23px;
+    font-weight: 400;
+  }
+
+  video {
+    border-radius: 5px;
+    margin: 0;
+    height: 254px;
+    width: 600px;
+  }
+
+  .Overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    margin: 20px 0 0 0;
+    width: 100%;
+  }
+}
+
+.CountdownText {
+  position: absolute;
+  color: white;
+  z-index: 100;
+
+  height: fit-content;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.Countdown-col {
+  display: inline-block;
+}
+
+.Countdown-col-element {
+  display: inline-block;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Countdown-col-element strong {
+  font-size: 30px;
+
+  @media only screen and (max-width: 1050px) {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .Countdown {
+    h1 {
+      font-size: 24px;
+    }
+
+    h2,
+    span {
+      font-size: 18px;
+    }
+  }
+}

@@ -7,25 +7,11 @@
   }
 }
 
-@media only screen and (max-width: 1050px) {
-  .Team {
-    margin-bottom: 20px;
-    .Row {
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-
-    .CampusDescription {
-      width: 80%;
-    }
-  }
-}
-
 .LaboratoryContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 30px;
 
   img {
     width: 400px;
@@ -67,5 +53,34 @@
     opacity: 95%;
     margin: 5px 0;
     line-height: 1.4;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .Team {
+    margin-bottom: 20px;
+    .Row {
+      flex-wrap: wrap;
+    }
+  }
+
+  .LaboratoryContainer {
+    margin: 0;
+    .Column {
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    img {
+      width: 90%;
+      margin: 10px 0;
+    }
+
+    p {
+      padding: 0 15px;
+    }
   }
 }

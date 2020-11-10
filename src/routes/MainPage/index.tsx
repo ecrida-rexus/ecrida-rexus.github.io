@@ -8,14 +8,13 @@ import RexusBexusBanner from 'components/RexusBexusBanner'
 import Section from 'components/Section'
 import Team from 'components/Team'
 import Partners from 'components/Partners'
-import Timeline from 'components/Timeline'
 import Experiment from 'components/Experiment'
 import Footer from 'components/Footer'
 
 export default function MainPage() {
   return (
     <>
-      <Header />
+      <Header isMainPage />
       <Element name='introduction'>
         <Introduction />
       </Element>
@@ -28,11 +27,6 @@ export default function MainPage() {
       <Element name='experiment'>
         <Section>
           <Experiment />
-        </Section>
-      </Element>
-      <Element name='activity'>
-        <Section>
-          <Timeline />
         </Section>
       </Element>
       <Element name='partners'>

@@ -8,5 +8,30 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
+
+    h1 {
+      text-align: left;
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .Timeline {
+    .Row {
+      flex-direction: column;
+    }
+
+    .Title {
+      align-items: center;
+
+      h1 {
+        text-align: center;
+      }
+    }
+
+    .fb-post {
+      margin-top: 10px;
+    }
   }
 }
