@@ -41,16 +41,10 @@ class Countdown extends Component<ICountdownProps> {
     }
 
     const timeLeft = {
-      years: 0,
       days: 0,
       hours: 0,
       min: 0,
       sec: 0
-    }
-
-    if (diff >= (365.25 * 86400)) {
-      timeLeft.years = Math.floor(diff / (365.25 * 86400))
-      diff -= timeLeft.years * 365.25 * 86400
     }
 
     if (diff >= 86400) {
@@ -84,37 +78,36 @@ class Countdown extends Component<ICountdownProps> {
     const countDown = this.state
 
     return (
-      <div className="Countdown">
+      <div className='Countdown'>
         <div className='CountdownText'>
-          <span className="Countdown-col">
-            <span className="Countdown-col-element">
+          <span className='Countdown-col'>
+            <span className='Countdown-col-element'>
               <h1>{this.addLeadingZeros(countDown.days)}</h1>
               <span>{countDown.days === 1 ? 'Day' : 'Days'}</span>
             </span>
           </span>
 
-          <span className="Countdown-col">
-            <span className="Countdown-col-element">
+          <span className='Countdown-col'>
+            <span className='Countdown-col-element'>
               <h1>{this.addLeadingZeros(countDown.hours)}</h1>
               <span>Hours</span>
             </span>
           </span>
 
-
-          <span className="Countdown-col">
-            <span className="Countdown-col-element">
+          <span className='Countdown-col'>
+            <span className='Countdown-col-element'>
               <h1>{this.addLeadingZeros(countDown.min)}</h1>
               <span>Min</span>
             </span>
           </span>
 
-          <span className="Countdown-col">
-            <span className="Countdown-col-element">
+          <span className='Countdown-col'>
+            <span className='Countdown-col-element'>
               <h1>{this.addLeadingZeros(countDown.sec)}</h1>
               <span>Sec</span>
             </span>
           </span>
-          <h2>until launch <span role="img" aria-label="rocket">🚀</span></h2>
+          <h2>until launch <span role='img' aria-label='rocket'>🚀</span></h2>
         </div>
         <video src={launch} autoPlay muted loop />
         <div className='Overlay' />
