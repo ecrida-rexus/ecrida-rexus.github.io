@@ -10,6 +10,7 @@ import Team from 'components/Team'
 import Partners from 'components/Partners'
 import Experiment from 'components/Experiment'
 import Footer from 'components/Footer'
+import Timeline from 'components/Timeline'
 
 export default function MainPage() {
   return (
@@ -27,6 +28,11 @@ export default function MainPage() {
       <Element name='experiment'>
         <Section>
           <Experiment />
+        </Section>
+      </Element>
+      <Element name=''>
+        <Section headline='Latest Facebook activity'>
+          <Timeline />
         </Section>
       </Element>
       <Element name='partners'>

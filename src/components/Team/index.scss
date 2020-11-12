@@ -9,7 +9,6 @@
 
 .LaboratoryContainer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
 
@@ -65,7 +64,10 @@
   }
 
   .LaboratoryContainer {
+    flex-direction: column;
+    align-items: center;
     margin: 0;
+
     .Column {
       align-items: center;
     }
