@@ -1,7 +1,8 @@
 import React from 'react'
 
-import Button from '../Button'
+import axios from 'axios'
 
+import Button from '../Button'
 import TeamMember from './components/TeamMember'
 
 import Radu from './assets/Radu.jpg'
@@ -20,21 +21,87 @@ import Campus from './assets/Campus.jpg'
 
 import './index.scss'
 
-export default class Team extends React.Component {
+export interface ITeamState {
+  showsExtended: boolean
+}
+
+export default class Team extends React.Component<{}, ITeamState> {
+  state: ITeamState = {
+    showsExtended: false
+  }
+
+  async componentDidMount() {
+    const result = await axios.get('https://extreme-ip-lookup.com/json/')
+
+    this.setState({ showsExtended: result.data.country === 'Romania' })
+  }
+
   public render() {
     return (
       <div className='Team'>
         <div className='Row'>
-          <TeamMember fullName='Radu Cioaca' image={Radu} role='Team Leader & Electronics' />
-          <TeamMember fullName='Alexandru Hantascu' image={Alex} role='Mechanics' />
-          <TeamMember fullName='Adrian Sisman' image={Adrian} role='Mechanics & Simulations' />
-          <TeamMember fullName='Cosmin Calcii' image={Cosmin} role='Software' />
-          <TeamMember fullName='Edwin Laszlo' image={Edwin} role='Optics & Science' />
-          <TeamMember fullName='Iulia Roman' image={Iulia} role='Outreach & Fundraising' />
-          <TeamMember fullName='Delia Vitalaru' image={Delia} role='Mission Analysis & Software' />
-          <TeamMember fullName='Romica Stoica' image={Romica} role='Mechanics' />
-          <TeamMember fullName='Paul Paraschiv' image={Paul} role='Verification & Testing' />
-          <TeamMember fullName='Valentin Mocanu' image={Valentin} role='Electronics' />
+          <TeamMember
+            fullName='Radu Cioaca'
+            image={Radu}
+            role='Team Leader & Electronics'
+            isCollapsed={this.state.showsExtended}
+          />
+          <TeamMember
+            fullName='Alexandru Hantascu'
+            image={Alex}
+            role='Mechanics'
+            isCollapsed={this.state.showsExtended}
+          />
+          <TeamMember
+            fullName='Adrian Sisman'
+            image={Adrian}
+            role='Mechanics & Simulations'
+            isCollapsed={this.state.showsExtended}
+          />
+          <TeamMember
+            fullName='Cosmin Calcii'
+            image={Cosmin}
+            role='Software'
+            isCollapsed={this.state.showsExtended}
+          />
+          <TeamMember
+            fullName='Edwin Laszlo'
+            image={Edwin}
+            role='Optics & Science'
+            isCollapsed={this.state.showsExtended}
+          />
+          <TeamMember
+            fullName='Iulia Roman'
+            image={Iulia}
+            role='Outreach & Fundraising'
+            isCollapsed={this.state.showsExtended}
+          />
+          <TeamMember fullName='Delia Vitalaru'
+            image={Delia}
+            role='Mission Analysis & Software'
+            isCollapsed={this.state.showsExtended}
+          />
+          <TeamMember
+            fullName='Romica Stoica'
+            image={Romica}
+            role='Mechanics'
+            isCollapsed={this.state.showsExtended}
+          />
+          <TeamMember
+            fullName='Paul Paraschiv'
+            image={Paul}
+            role='Verification & Testing'
+            isCollapsed={this.state.showsExtended}
+          />
+          <TeamMember
+            fullName='Valentin Mocanu'
+            image={Valentin}
+            role='Electronics'
+            isCollapsed={this.state.showsExtended}
+          />
+          {this.state.showsExtended ? <TeamMember fullName='Mihai Predoiu' role='Outreach' /> : null}
+          {this.state.showsExtended ? <TeamMember fullName='Marian Flutur' role='Software' /> : null}
+          {this.state.showsExtended ? <TeamMember fullName='Banu Alexandru' role='Electronics' /> : null}
         </div>
         <div className='LaboratoryContainer'>
           <div className='Column'>

@@ -30,28 +30,28 @@ export default class Experiment extends React.Component<{}, IExperimentState> {
   }
 
   get content() {
-    return this.state.content.map(item => {
+    return this.state.content.map((item, contentIndex) => {
       if (Array.isArray(item)) {
-        return <div className='Row'>
-          {item.map(source => {
+        return <div key={`c${contentIndex}`} className='Row'>
+          {item.map((source, itemIndex) => {
             if ('img' in source) {
-              return <img src={source.img} alt='' />
+              return <img key={itemIndex} src={source.img} alt='' />
             }
             if ('video' in source) {
-              return <video src={source.video} autoPlay muted loop />
+              return <video key={itemIndex} src={source.video} autoPlay muted loop />
             }
             return null
           })}
         </div>
       } else {
         if ('p' in item) {
-          return <p>{item.p}</p>
+          return <p key={`c${contentIndex}`}>{item.p}</p>
         }
         if ('h1' in item) {
-          return <h1>{item.h1}</h1>
+          return <h1 key={`c${contentIndex}`}>{item.h1}</h1>
         }
         if ('h2' in item) {
-          return <h2>{item.h2}</h2>
+          return <h2 key={`c${contentIndex}`}>{item.h2}</h2>
         }
         return null
       }
@@ -81,7 +81,7 @@ export default class Experiment extends React.Component<{}, IExperimentState> {
             <Button onClick={this.openRodal} text='Learn More' />
           </div>
 
-          <Rodal visible={this.state.isRodalOpen} onClose={this.closeRodal} height='auto' width='auto'>
+          <Rodal visible={this.state.isRodalOpen} onClose={this.closeRodal}>
             <div className='Experiment' >
               {this.content}
             </div>

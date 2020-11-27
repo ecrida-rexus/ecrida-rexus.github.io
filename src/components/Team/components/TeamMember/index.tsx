@@ -1,27 +1,27 @@
-import React from 'react'
+import * as React from 'react'
 
 import './index.scss'
 
 export interface ITeamMemberProps {
   fullName: string
-  image: string
+  image?: string
   role: string
+  isCollapsed?: boolean
 }
 
-export interface ITeamMemberState {
-}
+export default function TeamMember(props: ITeamMemberProps) {
+  const image = props.image && !props.isCollapsed ?
+    <img src={props.image} className='Image' alt={props.fullName}></img> :
+    null
 
-export default class TeamMember extends React.Component<ITeamMemberProps, ITeamMemberState> {
-  state: ITeamMemberState = {
-  }
+  const className =
+    `TeamMember ${!props.image || props.isCollapsed ? 'collapsed' : ''}`
 
-  public render() {
-    return (
-      <div className='TeamMember'>
-        <img src={this.props.image} className='Image' alt={this.props.fullName}></img>
-        <h1>{this.props.fullName}</h1>
-        <h2>{this.props.role}</h2>
-      </div >
-    )
-  }
+  return (
+    <div className={className}>
+      {image}
+      <h1>{props.fullName}</h1>
+      <h2>{props.role}</h2>
+    </div >
+  )
 }

@@ -51,7 +51,7 @@ export default function CrowdfundingPage() {
         </div>
       </div>
       <Decoration />
-      <Rodal visible={isModelRodalOpen} onClose={() => setIsModelRodalOpen(false)} height='auto' width='auto'>
+      <Rodal visible={isModelRodalOpen} onClose={() => setIsModelRodalOpen(false)}>
         <iframe
           title='sayduck3dViewer'
           name='sayduck3dViewer'
@@ -60,7 +60,7 @@ export default function CrowdfundingPage() {
           frameBorder='0'
         ></iframe>
       </Rodal>
-      <Rodal visible={isDonationRodalOpen} onClose={() => setIsDonationRodalOpen(false)} height='auto' width='auto'>
+      <Rodal visible={isDonationRodalOpen} onClose={() => setIsDonationRodalOpen(false)}>
         <ExtendedDonation />
       </Rodal>
     </div>

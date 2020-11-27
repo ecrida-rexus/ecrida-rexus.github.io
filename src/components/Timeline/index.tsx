@@ -8,6 +8,27 @@ export default function Timeline() {
       <div className='Row'>
         <div
           className='fb-post'
+          data-href='https://www.facebook.com/projectecrida/posts/413760186704142'
+          data-show-text='true'
+          data-width='350'
+        >
+          <blockquote
+            cite='https://www.facebook.com/projectecrida/posts/413760186704142'
+            className='fb-xfbml-parse-ignore'
+          >
+            <p>Mornings like this... <span role='img' aria-label='emoji'>😍</span></p>
+              Posted by
+              <a href='https://www.facebook.com/projectecrida/'>
+              REXUS - Project Ecrida
+              </a>
+              on
+              <a href='https://www.facebook.com/projectecrida/posts/413760186704142'>
+              Thursday, November 12, 2020
+              </a>
+          </blockquote>
+        </div>
+        <div
+          className='fb-post'
           data-href='https://www.facebook.com/projectecrida/posts/390144545732373'
           data-show-text='true'
           data-width='350'
