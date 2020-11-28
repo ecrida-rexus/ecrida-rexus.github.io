@@ -31,9 +31,7 @@ export default class Team extends React.Component<{}, ITeamState> {
   }
 
   async componentDidMount() {
-    const result = await axios.get('https://extreme-ip-lookup.com/json/')
-
-    this.setState({ showsExtended: result.data.country === 'Romania' })
+    this.setState({ showsExtended: Intl.DateTimeFormat().resolvedOptions().timeZone === 'Europe/Bucharest' })
   }
 
   public render() {
