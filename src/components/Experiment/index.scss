@@ -30,12 +30,12 @@
       line-height: 1.4;
     }
   }
+}
 
-  .rodal-dialog {
-    height: calc(100vh - 160px);
-    width: 50vw;
-    top: 90px;
-  }
+.rodal-dialog {
+  height: 500px !important;
+  width: 900px !important;
+  top: 40px;
 }
 
 .Experiment {
@@ -115,6 +115,11 @@
       padding: 5px;
       margin-top: 10px;
     }
+  }
+
+  .rodal-dialog {
+    height: 500px !important;
+    width: 320px !important;
   }
 
   .Experiment {

@@ -1,7 +1,5 @@
 import React from 'react'
 
-import axios from 'axios'
-
 import Button from '../Button'
 import TeamMember from './components/TeamMember'
 
@@ -21,104 +19,77 @@ import Campus from './assets/Campus.jpg'
 
 import './index.scss'
 
-export interface ITeamState {
-  showsExtended: boolean
-}
-
-export default class Team extends React.Component<{}, ITeamState> {
-  state: ITeamState = {
-    showsExtended: false
-  }
-
-  async componentDidMount() {
-    this.setState({ showsExtended: Intl.DateTimeFormat().resolvedOptions().timeZone === 'Europe/Bucharest' })
-  }
-
-  public render() {
-    return (
-      <div className='Team'>
-        <div className='Row'>
-          <TeamMember
-            fullName='Radu Cioaca'
-            image={Radu}
-            role='Team Leader & Electronics'
-            isCollapsed={this.state.showsExtended}
-          />
-          <TeamMember
-            fullName='Alexandru Hantascu'
-            image={Alex}
-            role='Mechanics'
-            isCollapsed={this.state.showsExtended}
-          />
-          <TeamMember
-            fullName='Adrian Sisman'
-            image={Adrian}
-            role='Mechanics & Simulations'
-            isCollapsed={this.state.showsExtended}
-          />
-          <TeamMember
-            fullName='Cosmin Calcii'
-            image={Cosmin}
-            role='Software'
-            isCollapsed={this.state.showsExtended}
-          />
-          <TeamMember
-            fullName='Edwin Laszlo'
-            image={Edwin}
-            role='Optics & Science'
-            isCollapsed={this.state.showsExtended}
-          />
-          <TeamMember
-            fullName='Iulia Roman'
-            image={Iulia}
-            role='Outreach & Fundraising'
-            isCollapsed={this.state.showsExtended}
-          />
-          <TeamMember fullName='Delia Vitalaru'
-            image={Delia}
-            role='Mission Analysis & Software'
-            isCollapsed={this.state.showsExtended}
-          />
-          <TeamMember
-            fullName='Romica Stoica'
-            image={Romica}
-            role='Mechanics'
-            isCollapsed={this.state.showsExtended}
-          />
-          <TeamMember
-            fullName='Paul Paraschiv'
-            image={Paul}
-            role='Verification & Testing'
-            isCollapsed={this.state.showsExtended}
-          />
-          <TeamMember
-            fullName='Valentin Mocanu'
-            image={Valentin}
-            role='Electronics'
-            isCollapsed={this.state.showsExtended}
-          />
-          {this.state.showsExtended ? <TeamMember fullName='Mihai Predoiu' role='Outreach' /> : null}
-          {this.state.showsExtended ? <TeamMember fullName='Marian Flutur' role='Software' /> : null}
-          {this.state.showsExtended ? <TeamMember fullName='Banu Alexandru' role='Electronics' /> : null}
-        </div>
-        <div className='LaboratoryContainer'>
-          <div className='Column'>
-            <h1>Our Laboratory</h1>
-            <p>
-              Our experiment is hosted by the Center for Advanced Research on New
-              Materials, Products and Innovative Processes (CAMPUS), the UPB's
-              advanced research & development center for multi - and inter - disciplinary technologies.
+export default function Team() {
+  return (
+    <div className='Team'>
+      <div className='Row'>
+        <TeamMember
+          fullName='Radu Cioaca'
+          image={Radu}
+          role='Team Leader & Electronics'
+        />
+        <TeamMember
+          fullName='Alexandru Hantascu'
+          image={Alex}
+          role='Mechanics'
+        />
+        <TeamMember
+          fullName='Adrian Sisman'
+          image={Adrian}
+          role='Mechanics & Simulations'
+        />
+        <TeamMember
+          fullName='Cosmin Calcii'
+          image={Cosmin}
+          role='Software'
+        />
+        <TeamMember
+          fullName='Edwin Laszlo'
+          image={Edwin}
+          role='Optics & Science'
+        />
+        <TeamMember
+          fullName='Iulia Roman'
+          image={Iulia}
+          role='Outreach & Fundraising'
+        />
+        <TeamMember fullName='Delia Vitalaru'
+          image={Delia}
+          role='Mission Analysis & Software'
+        />
+        <TeamMember
+          fullName='Romica Stoica'
+          image={Romica}
+          role='Mechanics'
+        />
+        <TeamMember
+          fullName='Paul Paraschiv'
+          image={Paul}
+          role='Verification & Testing'
+        />
+        <TeamMember
+          fullName='Valentin Mocanu'
+          image={Valentin}
+          role='Electronics'
+        />
+      </div>
+      <div className='LaboratoryContainer'>
+        <div className='Column'>
+          <h1>Our Laboratory</h1>
+          <p>
+            Our experiment is hosted by the Center for Advanced Research on New
+            Materials, Products and Innovative Processes (CAMPUS), the UPB's
+            advanced research & development center for multi - and inter - disciplinary technologies.
             </p>
-            <a href='http://www.campus.upb.ro/website/' target=' _blank' rel='noopener noreferrer nofollow'>
-              <Button text='CAMPUS Website' />
-            </a>
-          </div>
-          <div className='Column'>
-            <img src={Campus} alt='' />
-            <img src={Lab} alt='' />
-          </div>
+          <a href='http://www.campus.upb.ro/website/' target=' _blank' rel='noopener noreferrer nofollow'>
+            <Button text='CAMPUS Website' />
+          </a>
         </div>
-      </div >
-    )
-  }
+        <div className='Column'>
+          <img src={Campus} alt='' />
+          <img src={Lab} alt='' />
+        </div>
+      </div>
+    </div >
+  )
 }
