@@ -15,6 +15,7 @@ import ZARM from './assets/ZARM.png'
 import moraba from './assets/moraba.png'
 import techlounge from './assets/techlounge.png'
 import campus from './assets/campus.png'
+import twoSpace from './assets/2space.svg'
 
 import './index.scss'
 
@@ -43,11 +44,14 @@ export default class Partners extends React.Component {
           </a>
         </div>
         <div className='Row'>
+          <a href='https://roinspace.com/' target='_blank' rel='noopener noreferrer'>
+            <img src={RISE} className='Logo' alt=''></img>
+          </a>
           <a href='https://www.gmv.com/en/' target='_blank' rel='noopener noreferrer'>
             <img src={GMV} className='Logo' alt=''></img>
           </a>
-          <a href='https://roinspace.com/' target='_blank' rel='noopener noreferrer'>
-            <img src={RISE} className='Logo' alt=''></img>
+          <a href='https://www.facebook.com/2SpaceProject' target='_blank' rel='noopener noreferrer'>
+            <img src={twoSpace} className='Logo' alt=''></img>
           </a>
           <a href='https://www2.spacescience.ro/?lang=en' target='_blank' rel='noopener noreferrer'>
             <img src={ISS} className='Logo' alt=''></img>
