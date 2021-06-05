@@ -8,64 +8,64 @@ export default function Timeline() {
       <div className='Row'>
         <div
           className='fb-post'
-          data-href="https://www.facebook.com/projectecrida/posts/503271701086323"
+          data-href="https://www.facebook.com/projectecrida/posts/550232523056907"
           data-show-text='true'
           data-width='350'
         >
           <blockquote
-            cite="https://www.facebook.com/projectecrida/posts/503271701086323"
+            cite="https://www.facebook.com/projectecrida/posts/550232523056907"
             className='fb-xfbml-parse-ignore'
           >
-            <p>[RO] Astăzi îl serbăm pe dragul nostru coleg si prieten Paraschiv Paul. Sperăm că ai avut o zi frumoasă și îți urăm...</p>
+            <p>[RO] Suntem gata pentru testele de vibrații!! Ne-am străduit o perioadă lungă de timp și ne-am lovit de câteva...</p>
               Posted by
               <a href='https://www.facebook.com/projectecrida/'>
               REXUS - Project Ecrida
               </a>
               on
-              <a href="https://www.facebook.com/projectecrida/posts/503271701086323">
-              Sunday, March 21, 2021
+              <a href="https://www.facebook.com/projectecrida/posts/550232523056907">
+              Wednesday, June 2, 2021
               </a>
           </blockquote>
         </div>
         <div
           className='fb-post'
-          data-href="https://www.facebook.com/projectecrida/posts/492705845476242"
+          data-href="https://www.facebook.com/projectecrida/posts/542205843859575"
           data-show-text='true'
           data-width='350'
         >
           <blockquote
-            cite="https://www.facebook.com/projectecrida/posts/492705845476242"
+            cite="https://www.facebook.com/projectecrida/posts/542205843859575"
             className='fb-xfbml-parse-ignore'
           >
-            <p>[RO] Suntem foarte bucuroși să vă anunțăm că proiectului nostru i s-a alăturat un nou sponsor. 2Space este o organizație formată din studenți politehniști ...</p>
+            <p>[RO] Acum cateva zile, colegii nostri Delia și Romică au fost prezenți la aniversarea de 40 de ani de la primul zbor al...</p>
               Posted by
               <a href='https://www.facebook.com/projectecrida/'>
               REXUS - Project Ecrida
               </a>
               on
-              <a href="https://www.facebook.com/projectecrida/posts/492705845476242">
-              Friday, March 5, 2021
+              <a href="https://www.facebook.com/projectecrida/posts/542205843859575">
+              Friday, May 21, 2021
               </a>
           </blockquote>
         </div>
         <div
           className='fb-post'
-          data-href="https://www.facebook.com/projectecrida/posts/485208182892675"
+          data-href="https://www.facebook.com/projectecrida/posts/537289334351226"
           data-show-text='true'
           data-width='350'
         >
           <blockquote
-            cite="https://www.facebook.com/projectecrida/posts/485208182892675"
+            cite="https://www.facebook.com/projectecrida/posts/537289334351226"
             className='fb-xfbml-parse-ignore'
           >
-            <p>Studierea spațiului cosmic nu se va opri din a ne oferi cunoștiințe noi despre lumea în care trăim. În întâmpinarea...<span role='img' aria-label='emoji'>😍</span></p>
+            <p>[RO] Ploi de vara, sunt imprevizibile! Dar noi suntem pregătiți mereu. Dacă sunteți interesați, ne puteți...</p>
               Posted by
               <a href='https://www.facebook.com/projectecrida/'>
               REXUS - Project Ecrida
               </a>
               on
-              <a href="https://www.facebook.com/projectecrida/posts/485208182892675">
-              Sunday, February 21, 2021
+              <a href="https://www.facebook.com/projectecrida/posts/537289334351226">
+              Thursday, May 13, 2021
               </a>
           </blockquote>
         </div>
