@@ -8,65 +8,73 @@ export default function Timeline() {
       <div className='Row'>
         <div
           className='fb-post'
-          data-href="https://www.facebook.com/projectecrida/posts/550232523056907"
+          data-href='https://www.facebook.com/projectecrida/posts/653408109406014'
           data-show-text='true'
           data-width='350'
         >
           <blockquote
-            cite="https://www.facebook.com/projectecrida/posts/550232523056907"
+            cite='https://www.facebook.com/projectecrida/posts/653408109406014'
             className='fb-xfbml-parse-ignore'
           >
-            <p>[RO] Suntem gata pentru testele de vibrații!! Ne-am străduit o perioadă lungă de timp și ne-am lovit de câteva...</p>
-              Posted by
-              <a href='https://www.facebook.com/projectecrida/'>
+            <p>
+              Going back 1 year and a half ago when we made our project known
+              through a well-known romanian news channel, Digi24. If you didn’t
+              see it then, take a look now.
+            </p>
+            Posted by
+            <a href='https://www.facebook.com/projectecrida/'>
               REXUS - Project Ecrida
-              </a>
-              on
-              <a href="https://www.facebook.com/projectecrida/posts/550232523056907">
-              Wednesday, June 2, 2021
-              </a>
+            </a>
+            on
+            <a href='https://www.facebook.com/projectecrida/posts/653408109406014'>
+              Sunday, November 7, 2021
+            </a>
           </blockquote>
         </div>
         <div
           className='fb-post'
-          data-href="https://www.facebook.com/projectecrida/posts/542205843859575"
+          data-href="https://www.facebook.com/projectecrida/posts/645442436869248"
           data-show-text='true'
           data-width='350'
         >
           <blockquote
-            cite="https://www.facebook.com/projectecrida/posts/542205843859575"
+            cite="https://www.facebook.com/projectecrida/posts/645442436869248"
             className='fb-xfbml-parse-ignore'
           >
-            <p>[RO] Acum cateva zile, colegii nostri Delia și Romică au fost prezenți la aniversarea de 40 de ani de la primul zbor al...</p>
-              Posted by
-              <a href='https://www.facebook.com/projectecrida/'>
+            <p>
+            Check these, guys!
+            </p>
+            Posted by
+            <a href='https://www.facebook.com/projectecrida/'>
               REXUS - Project Ecrida
-              </a>
-              on
-              <a href="https://www.facebook.com/projectecrida/posts/542205843859575">
-              Friday, May 21, 2021
-              </a>
+            </a>
+            on
+            <a href="https://www.facebook.com/projectecrida/posts/645442436869248">
+            Monday, October 25, 2021
+            </a>
           </blockquote>
         </div>
         <div
           className='fb-post'
-          data-href="https://www.facebook.com/projectecrida/posts/537289334351226"
+          data-href="https://www.facebook.com/projectecrida/posts/641432937270198"
           data-show-text='true'
           data-width='350'
         >
           <blockquote
-            cite="https://www.facebook.com/projectecrida/posts/537289334351226"
+            cite="https://www.facebook.com/projectecrida/posts/641432937270198"
             className='fb-xfbml-parse-ignore'
           >
-            <p>[RO] Ploi de vara, sunt imprevizibile! Dar noi suntem pregătiți mereu. Dacă sunteți interesați, ne puteți...</p>
-              Posted by
-              <a href='https://www.facebook.com/projectecrida/'>
+            <p>
+            [RO] Dorim să îi urăm un călduros 'La mulți ani' dragei noastre colege Delia!! Sperăm să ai o zi minunată și să rămâi...
+            </p>
+            Posted by
+            <a href='https://www.facebook.com/projectecrida/'>
               REXUS - Project Ecrida
-              </a>
-              on
-              <a href="https://www.facebook.com/projectecrida/posts/537289334351226">
-              Thursday, May 13, 2021
-              </a>
+            </a>
+            on
+            <a href="https://www.facebook.com/projectecrida/posts/641432937270198">
+            Tuesday, October 19, 2021
+            </a>
           </blockquote>
         </div>
       </div>

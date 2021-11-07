@@ -14,6 +14,9 @@ import SSC from './assets/SSC.svg'
 import ZARM from './assets/ZARM.png'
 import moraba from './assets/moraba.png'
 import techlounge from './assets/techlounge.png'
+import faulhaber from './assets/faulhaber.png'
+import thales from './assets/thales.svg'
+import top from './assets/top.png'
 import campus from './assets/campus.png'
 import twoSpace from './assets/2space.svg'
 
@@ -58,6 +61,17 @@ export default class Partners extends React.Component {
           </a>
           <a href='https://tech-lounge.ro/' target='_blank' rel='noopener noreferrer'>
             <img src={techlounge} className='Logo' alt=''></img>
+          </a>
+        </div>
+        <div className='Row'>
+          <a href='https://www.thalesgroup.com/en' target='_blank' rel='noopener noreferrer'>
+            <img src={thales} className='Logo' alt=''></img>
+          </a>
+          <a href='https://www.faulhaber.com/en/home/' target='_blank' rel='noopener noreferrer'>
+            <img src={faulhaber} className='Logo' alt=''></img>
+          </a>
+          <a href='http://topmetrology.ro/en/' target='_blank' rel='noopener noreferrer'>
+            <img src={top} className='Logo' alt=''></img>
           </a>
         </div>
         <div className='Row'>

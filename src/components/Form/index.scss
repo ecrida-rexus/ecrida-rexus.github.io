@@ -1,0 +1,136 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-height: 520px;
+  width: 65%;
+  min-width: 360px;
+
+  padding: 5px 15px 15px 15px;
+  margin: 5px;
+  box-sizing: border-box;
+
+  border-radius: 7px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  background: white;
+
+  ul {
+    width: 100%;
+    box-sizing: border-box;
+    list-style-type: '🚀';
+    padding: 0 0 0 25px;
+  }
+
+  h4 {
+    margin: 0 0 auto 0;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  h3 {
+    margin: auto;
+    flex-flow: 1;
+    font-weight: 400;
+    color: #3c5a95;
+    cursor: pointer;
+  }
+
+  h2,
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0.9;
+    margin: 5px;
+  }
+
+  h2 {
+    min-height: 40px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 10px 0 10px 10px;
+    line-height: 1.3;
+    opacity: 1;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+
+    label {
+      text-align: left;
+      margin-bottom: 2px;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+
+    .FormItem {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    input {
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border: 0px;
+      border-radius: 4px;
+    }
+
+    input:focus {
+      outline: none !important;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .Button {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+}
+
+.Donate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  img {
+    margin-top: 10px;
+    width: 85px;
+  }
+}
+
+.FormTitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+  padding: 5px 15px;
+  border-radius: 7px 7px 0 0;
+
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .Form {
+    min-width: 100%;
+  }
+
+  .FormTitle {
+    padding: 0;
+  }
+}
