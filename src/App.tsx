@@ -11,8 +11,8 @@ export default function App() {
   return (
     <div className='App'>
       <HashRouter>
+        <Route component={CrowdfundingPage} path='/' exact />
         <Route component={MainPage} path='/' exact />
-        <Route component={CrowdfundingPage} path='/crowdfunding' exact />
       </HashRouter>
     </div>
   )

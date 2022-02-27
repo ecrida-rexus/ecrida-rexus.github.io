@@ -42,7 +42,7 @@ export default function Header(props: IHeaderProps) {
       </RouterLink>
       <div className='SectionLinks'>
         <RouterLink to='/'>
-          <p>Home</p>
+          <p>Go to website</p>
         </RouterLink>
       </div>
     </>

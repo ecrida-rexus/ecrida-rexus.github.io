@@ -1,58 +1,59 @@
-import React from 'react'
-
-import Button from 'components/Button'
-
-import PayPal from './assets/PayPal.svg'
-
 import './index.scss'
+
+import React from 'react'
 
 export interface ITierProps {
   title: string
   subtitle: string
-  type: 'standard' | 'special'
-  openDonationRodal?: () => void
+  type: 'tier1' | 'tier2' | 'tier3'
   openModelRodal?: () => void
 }
 
 export default function Tier(props: ITierProps) {
-
-  const standardList = (
+  const tier1List = (
     <ul>
-      <li><p>Un loc pentru numele tău în secțiunea website-ului dedicată donatorilor *</p></li>
-      <li><p>Un loc pentru numele tău în toate documentele și prezentările oficiale ale echipei *</p></li>
-      <li><p>Mii de mulțumiri</p></li>
+      <li>
+        <p>NFT ECRIDA-SPACE Collection</p>
+      </li>
     </ul>
   )
 
-  const specialList = (
+  const tier2List = (
     <ul>
-      <li><p>Toate cele menționate la donația standard</p></li>
-      <li><p>Gravarea laser a numelui sau a logo-ului propriu pe componentele ce vor fi expuse la Muzeul Militar din București</p></li>
+      <li>
+        <p>NFT ECRIDA-SPACE Collection</p>
+      </li>
+      <li>
+        <p>Name engraving on experiment lid</p>
+      </li>
+    </ul>
+  )
+
+  const tier3List = (
+    <ul>
+      <li>
+        <p>NFT ECRIDA-SPACE Collection</p>
+      </li>
+      <li>
+        <p>Name engraving on experiment lid</p>
+      </li>
+      <li>
+        <p> Mountain Screw reward</p>
+      </li>
     </ul>
   )
 
   return (
-    <div className='Tier' >
+    <div className='Tier'>
       <div className='TierTitle'>
         <h1>{props.title}</h1>
       </div>
-      <h2>{props.subtitle}</h2>
       <div>
-        {props.type === 'standard' ? standardList : null}
-        {props.type === 'special' ? specialList : null}
+        {props.type === 'tier1' && tier1List}
+        {props.type === 'tier2' && tier2List}
+        {props.type === 'tier3' && tier3List}
       </div>
-      {props.type === 'standard' ? <h4>*cu acordul donatorului</h4> : null}
-      {props.type === 'special' ?
-        <h3 onClick={props.openModelRodal}>Vezi modelul 3D al componentei</h3> :
-        null
-      }
-      <div className='Donate'>
-        {props.type === 'standard' ? <Button text='Donează' /> : null}
-        {props.type === 'special' ? <Button text='Alege Locul' onClick={props.openDonationRodal} /> : null}
-        {props.type === 'standard' ?
-          <img src={PayPal} alt='' /> :
-          <img src={PayPal} alt='' style={{ visibility: 'hidden' }} />}
-      </div>
+      <h3 onClick={props.openModelRodal}>Read More</h3>
     </div>
   )
 }
