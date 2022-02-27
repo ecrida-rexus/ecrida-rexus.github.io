@@ -5,9 +5,13 @@ import Decoration from 'components/Decoration'
 import Form from 'components/Form'
 import Tier from 'components/Tier'
 
+import Rodal from 'rodal'
+
 import './index.scss'
 
 export default function CrowdfundingPage() {
+  const [isTier1ModalOpen, setIsTier1ModalOpen] = React.useState(false)
+
   return (
     <div className='CrowdfundingPage'>
       <Header />
@@ -15,24 +19,24 @@ export default function CrowdfundingPage() {
         <div className='Story'>
           <h1>How to support ECRIDA</h1>
           <div className='Tiers'>
-          <Tier
-            title='TIER 1'
-            subtitle=''
-            type='tier1'
-            openModelRodal={() => {}}
-          />
-          <Tier
-            title='TIER 2'
-            subtitle=''
-            type='tier2'
-            openModelRodal={() => {}}
-          />
-          <Tier
-            title='TIER 3'
-            subtitle=''
-            type='tier3'
-            openModelRodal={() => {}}
-          />
+            <Tier
+              title='TIER 1'
+              subtitle=''
+              type='tier1'
+              openModelRodal={() => setIsTier1ModalOpen(true)}
+            />
+            <Tier
+              title='TIER 2'
+              subtitle=''
+              type='tier2'
+              openModelRodal={() => {}}
+            />
+            <Tier
+              title='TIER 3'
+              subtitle=''
+              type='tier3'
+              openModelRodal={() => {}}
+            />
           </div>
         </div>
         <div className='Donations'>
@@ -40,6 +44,16 @@ export default function CrowdfundingPage() {
         </div>
       </div>
       <Decoration />
+
+      <Rodal
+        visible={isTier1ModalOpen}
+        onClose={() => setIsTier1ModalOpen(false)}
+      >
+        <div className='Tier1Description'>
+          <p>TIER 1</p>
+          <p>TEST</p>
+        </div>
+      </Rodal>
     </div>
   )
 }

@@ -70,9 +70,9 @@ export default function Form() {
           <div className='FormItem'>
             <label htmlFor='email'>Tier</label>
             <select id='tier' name='tier'>
-              <option value='tier3'>Tier 3</option>
-              <option value='tier2'>Tier 2</option>
               <option value='tier1'>Tier 1</option>
+              <option value='tier2'>Tier 2</option>
+              <option value='tier3'>Tier 3</option>
             </select>
             <ValidationError prefix='Tier' field='tier' errors={state.errors} />
           </div>
