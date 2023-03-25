@@ -12,7 +12,7 @@ export default class Footer extends React.Component {
             Mihai Predoiu
           </a>
         </div>
-        <p>© 2020 Project ECRIDA. All rights reserved.</p>
+        <p>© 2023 Project ECRIDA. All rights reserved.</p>
       </div >
     )
   }

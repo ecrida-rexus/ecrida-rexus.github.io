@@ -8,73 +8,50 @@ export default function Timeline() {
       <div className='Row'>
         <div
           className='fb-post'
-          data-href='https://www.facebook.com/projectecrida/posts/703341747745983'
+          data-href='https://www.facebook.com/projectecrida/posts/pfbid0USCr5SYqk2HQjVHmxusmWpYT2voj6a9o4L3RhPpkvsxL5sLszXgT9ccsEvKiDiKml'
           data-show-text='true'
           data-width='350'
         >
           <blockquote
-            cite='https://www.facebook.com/projectecrida/posts/703341747745983'
+            cite='https://www.facebook.com/projectecrida/posts/pfbid0USCr5SYqk2HQjVHmxusmWpYT2voj6a9o4L3RhPpkvsxL5sLszXgT9ccsEvKiDiKml'
             className='fb-xfbml-parse-ignore'
           >
             <p>
-              [RO] Săptămâna trecută Alex și Valentin au participat la Bench
-              Test Week in Oberpfaffenhofen, eveniment dedicat testării...
+              Astăzi au loc ultimele teste înainte de trecerea experimentelor în configurația de zbor.
+              Primele informații ne spun că lansarea va avea loc săptămâna viitoare Miercuri sau Joi.
             </p>
             Posted by
             <a href='https://www.facebook.com/projectecrida/'>
               REXUS - Project Ecrida
             </a>
             on
-            <a href='https://www.facebook.com/projectecrida/posts/703341747745983'>
-              Wednsday, January 26, 2022
+            <a href='https://www.facebook.com/projectecrida/posts/pfbid0USCr5SYqk2HQjVHmxusmWpYT2voj6a9o4L3RhPpkvsxL5sLszXgT9ccsEvKiDiKml'>
+              Saturday, March 26, 2023
             </a>
           </blockquote>
         </div>
         <div
           className='fb-post'
-          data-href='https://www.facebook.com/projectecrida/posts/699534478126710'
+          data-href='https://fb.watch/jvb1LbBkLi/'
           data-show-text='true'
           data-width='350'
         >
           <blockquote
-            cite='https://www.facebook.com/projectecrida/posts/699534478126710'
+            cite='https://fb.watch/jvb1LbBkLi/'
             className='fb-xfbml-parse-ignore'
           >
             <p>
-              [RO] La aterizarea noastră în München am avut surpriza de a fi
-              recunoscuți de două persoane ce au strânse legături cu...
+              Steagul României la centrul spațial Esrange din Cercul Polar.
+              Pe 21 Martie la ora 06:00 autoritățile au arborat tricolorul alături de toate steagurile națiunilor participante la campania de lansare a rachetei REXUS.
+              ECRIDA reprezintă România și Universitatea POLITEHNICA din București la cel mai înalt nivel posibil.
             </p>
             Posted by
             <a href='https://www.facebook.com/projectecrida/'>
               REXUS - Project Ecrida
             </a>
             on
-            <a href='https://www.facebook.com/projectecrida/posts/699534478126710'>
-              Thursday, January 20, 2022
-            </a>
-          </blockquote>
-        </div>
-        <div
-          className='fb-post'
-          data-href='https://www.facebook.com/projectecrida/posts/698407088239449'
-          data-show-text='true'
-          data-width='350'
-        >
-          <blockquote
-            cite='https://www.facebook.com/projectecrida/posts/698407088239449'
-            className='fb-xfbml-parse-ignore'
-          >
-            <p>
-              Acum 3 zile experimentul nostru a aterizat în Munchen pentru un
-              set de teste ce trebuie efectuate inaintea începerii...
-            </p>
-            Posted by
-            <a href='https://www.facebook.com/projectecrida/'>
-              REXUS - Project Ecrida
-            </a>
-            on
-            <a href='https://www.facebook.com/projectecrida/posts/698407088239449'>
-              Tuesday, January 18, 2022
+            <a href='https://fb.watch/jvb1LbBkLi/'>
+              Friday, March 24, 2023
             </a>
           </blockquote>
         </div>

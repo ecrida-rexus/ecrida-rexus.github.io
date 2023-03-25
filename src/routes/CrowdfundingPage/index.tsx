@@ -21,19 +21,19 @@ export default function CrowdfundingPage() {
           <div className='Tiers'>
             <Tier
               title='TIER 1'
-              subtitle=''
+              subtitle='20 €'
               type='tier1'
               openModelRodal={() => setIsTier1ModalOpen(true)}
             />
             <Tier
               title='TIER 2'
-              subtitle=''
+              subtitle='80 €'
               type='tier2'
               openModelRodal={() => {}}
             />
             <Tier
               title='TIER 3'
-              subtitle=''
+              subtitle='200 €'
               type='tier3'
               openModelRodal={() => {}}
             />

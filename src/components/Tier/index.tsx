@@ -48,6 +48,7 @@ export default function Tier(props: ITierProps) {
       <div className='TierTitle'>
         <h1>{props.title}</h1>
       </div>
+      <h2>{props.subtitle}</h2>
       <div>
         {props.type === 'tier1' && tier1List}
         {props.type === 'tier2' && tier2List}

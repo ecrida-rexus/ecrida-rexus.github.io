@@ -25,7 +25,7 @@ export default class Introduction extends React.Component {
             </p>
             <p>
               Our experiment will be launched on-board the RX29 Rocket
-              from the Polar Circle, Sweden in March 2022.
+              from the Polar Circle, Sweden in March 2023.
             </p>
             <div className='Email'>
               <h3>EMAIL</h3>
@@ -66,7 +66,7 @@ export default class Introduction extends React.Component {
               </form>
             </div>
 
-            <Countdown date={'2022-03-20T12:00:00'} />
+            <Countdown date={'2023-03-29T16:00:00'} />
           </div>
         </div>
         <Decoration />
